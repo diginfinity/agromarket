@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+.uk-navbar-nav > li > a {
+  min-height: 50px; }
+
+.nav-custom-active {
+  border-bottom: 2px solid #EB3237;
+  max-height: 50px !important; }
+  .nav-custom-active a {
+    color: #EB3237 !important;
+    height: 50px !important;
+    min-height: 50px !important; }
+
+.nav-custom-container {
+  max-width: 1200px;
+  margin: 0 121px 0 auto;
+  flex-direction: column; }
+
+.nav-custom-link {
+  max-height: 40px;
+  font-size: 18px; }
+
+.nav-custom-placement {
+  font-size: 12px; }
+
+.nav-custom-moveaway {
+  margin: 0 10px;
+  color: #A0A0A0; }
+
+.input-colour-border {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  font-weight: bold; }
+
+.input1-custom {
+  width: 285px; }
+
+.input1-form-boundary {
+  border: 1px solid #666666; }
+
+.input1 {
+  border: none !important;
+  outline: none;
+  max-width: 90% !important;
+  width: 90% !important;
+  height: 30px !important; }
+
+.input1-custom-padding {
+  padding: 1rem; }
+
+.input1-custom-margin-bottom {
+  margin-bottom: 40px; }
+
+.input-colour-border {
+  background-color: #F5F5F5;
+  border-radius: 5px;
+  font-weight: bold; }
+
+.input2-custom {
+  width: 560px; }
+
+.input2-form-boundary input {
+  height: 30px !important; }
+
+.input2-border {
+  border: 1px solid #DCDCDC;
+  border-radius: 5px; }
+
+.input2-search-input {
+  width: 80% !important; }
+
+.input2-mm {
+  font-size: 12px; }
+
+.form-group {
+  display: inline-block;
+  width: 110px;
+  margin: 0 8px; }
+  .form-group label {
+    font-size: 12px; }
+  .form-group:nth-child(4) {
+    width: 120px; }
+
+.input2 {
+  border: none !important;
+  outline: none;
+  height: 30px !important; }
+
+.input2-custom-padding {
+  padding: 1rem 1rem 1.5rem 1rem; }
+
+.input2-custom-margin-bottom {
+  margin-bottom: 20px; }
+
+.input2-search-button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: white;
+  height: 30px;
+  width: 30px; }
+
+.input2-centered-button {
+  padding: 5px 0 0 7px; }
+
+.input2-small-text {
+  font-size: 10px;
+  text-align: right;
+  margin-right: 4rem; }
+
+.pocetna-flex-search {
+  display: flex;
+  justify-content: space-between; }
+
+html {
+  font-family: "Inter", sans-serif; }
+
+.text-primary {
+  color: #EB3237; }
+
+.smaller {
+  font-size: 14px; }
+
+.upper {
+  text-transform: uppercase; }

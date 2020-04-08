@@ -1,0 +1,36 @@
+@import "variables.scss";
+
+.uk-navbar-nav > li > a {
+  min-height: 50px ;
+}
+
+.nav-custom-active {
+  border-bottom: 2px solid $primary;
+  max-height: 50px !important;
+  a {
+    color: $primary !important;
+    height: 50px !important;
+    min-height: 50px !important;
+  }
+}
+
+.nav-custom-container {
+  max-width: 1200px;
+  margin: 0 121px 0 auto;
+  flex-direction: column;
+}
+
+.nav-custom-link {
+  max-height: 40px;
+  font-size: 18px;
+}
+
+.nav-custom-placement {
+  font-size: 12px;
+
+}
+
+.nav-custom-moveaway {
+  margin: 0 10px;
+  color: #A0A0A0;
+}
