@@ -2,6 +2,9 @@ const express = require("express");
 
 const app = express();
 
+app.get('/', (req, res) => res.send('Hello World!'))
+
+// Running client side on prod
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
   const path = require("path");
