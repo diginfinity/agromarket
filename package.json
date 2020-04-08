@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "agromarket",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
+    "server": "set DEBUG=agromarket:* & nodemon ./bin/www",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "db:reset": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+    "db:recreate": "sequelize db:drop && sequelize db:create",
+    "db:hard-reset": "npm run db:recreate && npm run db:reset"
   },
   "repository": {
     "type": "git",
@@ -20,10 +24,14 @@
   },
   "homepage": "https://github.com/diginfinity/agromarket#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6"
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
   }
 }
