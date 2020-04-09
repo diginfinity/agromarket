@@ -9,8 +9,8 @@ module.exports = {
         radius: 10.0,
         diameter: 22.0,
         b: 14.0,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        createdAt: "2020-04-09T07:45:07.000Z",
+        updatedAt: "2020-04-09T07:45:07.000Z",
         link:
           "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4900-2RSR-XL?pattern=NA4900-2RSR-XL",
       },
@@ -20,8 +20,8 @@ module.exports = {
         radius: 10.0,
         diameter: 22.0,
         b: 14.0,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        createdAt: "2020-04-09T07:45:07.000Z",
+        updatedAt: "2020-04-09T07:45:07.000Z",
         link:
           "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-RSR*NA4900-RSR-XL?pattern=NA4900-RSR-XL",
       },
@@ -31,8 +31,8 @@ module.exports = {
         radius: 12.0,
         diameter: 24.0,
         b: 14.0,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+        createdAt: "2020-04-09T07:45:07.000Z",
+        updatedAt: "2020-04-09T07:45:07.000Z",
         link:
           "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4901-2RSR-XL?pattern=NA4901-2RSR-XL",
       },

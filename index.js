@@ -17,16 +17,6 @@ app.use((req, res, next) => {
   next(err);
 });
 
-// error handler
-// no stacktraces leaked to user unless in development environment
-app.use((err, req, res, next) => {
-  res.status(err.status || 500);
-  res.render("error", {
-    message: err.message,
-    error: app.get("env") === "development" ? err : {},
-  });
-});
-
 // Running client side on prod
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
