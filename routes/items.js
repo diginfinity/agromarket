@@ -3,18 +3,21 @@ const express = require("express");
 const router = express.Router();
 const { Op } = require("sequelize");
 const Joi = require("joi");
-const validator = require("express-joi-validation").createValidator({});
 
-const itemSchema = Joi.object({
+const validator = require("express-joi-validation").createValidator();
+
+const itemSchemaOptions = {
   title: Joi.string(),
   innerDiameter: Joi.number().precision(3),
   outerDiameter: Joi.number().precision(3),
   width: Joi.number().precision(3),
   page: Joi.number(),
   size: Joi.number(),
-});
+};
 
-router.get("/", validator.query(itemSchema), async (req, res) => {
+const itemSchema = Joi.object(itemSchemaOptions);
+
+const getItems = async (req, res) => {
   const { innerDiameter, outerDiameter, width } = req.query;
   const title = req.query.title || "";
   const page = req.query.page || 1;
@@ -42,9 +45,14 @@ router.get("/", validator.query(itemSchema), async (req, res) => {
     findOptions.width = width;
   }
 
-  const items = await models.item.findAll(findOptions);
+  try {
+    const items = await models.item.findAll(findOptions);
+    res.status(200).json(items);
+  } catch (error) {
+    res.status(400).json(error);
+  }
+};
 
-  res.json(items);
-});
+router.get("/", validator.query(itemSchema), getItems);
 
 module.exports = router;
