@@ -1,0 +1,19 @@
+@import "variables";
+
+.main-card-container {
+  display: flex;
+  padding: 1rem;
+  max-width: 45%;
+}
+
+.main-card-container-accent {
+  background-color: $card-bg;
+}
+
+.main-card-image {
+  margin-right: 1rem;
+}
+
+.main-card-content {
+  margin-left: 1rem;
+}

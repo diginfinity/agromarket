@@ -1,0 +1,31 @@
+@import "variables";
+
+.other-card-container {
+  display: block;
+  margin: 1rem;
+  max-width: 30%;
+  border-bottom: 2px solid $primary;
+}
+
+.other-card-img-content-bundle {
+  display: flex;
+}
+
+.other-card-image {
+  margin-right: 1rem;
+}
+
+.other-card-content {
+  margin-left: 1rem;
+}
+
+.other-card-link {
+  text-decoration: none !important;
+  background-color: $primary;
+  color: white;
+  &:hover {
+    color: white;
+  }
+  // align-self: flex-end;
+  padding: 5px 3rem;
+}

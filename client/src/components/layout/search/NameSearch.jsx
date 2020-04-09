@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 
-function Input1() {
+function NameSearch() {
   const [state, setState] = useState("")
 
   return (
-    <div className="input1-custom input-colour-border input1-custom-padding">
-      <p className="input1-custom-margin-bottom text-primary upper smaller">Pretrazite prema sifri ili pojmu:</p>
-      <div className="input1-form-boundary">
+    <div className="name-search-custom input-colour-border name-search-custom-padding uk-margin-left">
+      <p className="name-search-custom-margin-bottom text-primary upper smaller">Pretrazite prema sifri ili pojmu:</p>
+      <div className="name-search-form-boundary">
         <input
           type="text"
           value={state}
           onChange={(e) => setState(e.target.value)}
-          className="uk-input input1"
+          className="uk-input name-search"
         />
         {
           state.length <= 0 ? <i className="fas fa-search"></i> :
@@ -22,4 +22,4 @@ function Input1() {
   );
 }
 
-export default Input1;
+export default NameSearch;

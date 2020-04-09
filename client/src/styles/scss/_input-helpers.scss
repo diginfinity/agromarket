@@ -1,5 +1,7 @@
+@import "variables";
+
 .input-colour-border {
-  background-color: #F5F5F5;
+  background-color: $card-bg;
   border-radius: 5px;
   font-weight: bold;
 }

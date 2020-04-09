@@ -1,16 +1,16 @@
 import React, { Fragment } from 'react';
-import './styles/css/index.css';
+import './styles/scss/index.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Nav from './components/layout/Nav';
-import Pocetna from './components/pages/Pocetna';
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Fragment>
-          <Nav />
-          <Route exact path="/" component={Pocetna} />
+          <Nav additional />
+          <Route exact path="/" component={Home} />
         </Fragment>
       </Switch>
     </Router>

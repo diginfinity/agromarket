@@ -2,9 +2,15 @@
 @import "main";
 @import "nav";
 @import "variables";
-@import "input1";
-@import "input2";
-@import "pocetna";
+@import "name-search";
+@import "dimension";
+@import "home";
+@import "filter-search";
+@import "title-card";
+@import "main-card";
+@import "represent-card";
+@import "other-card";
+@import "footer";
 
 html {
   font-family: "Inter", sans-serif;
@@ -20,4 +26,16 @@ html {
 
 .upper {
   text-transform: uppercase;
+}
+
+.white {
+  color: white !important;
+}
+
+.black {
+  color: black !important;
+}
+
+.bg-primary {
+  border: $primary;
 }

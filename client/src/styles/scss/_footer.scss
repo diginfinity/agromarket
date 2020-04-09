@@ -1,0 +1,31 @@
+@import "variables";
+
+.footer-container {
+  background-color: $footer-bg;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-phone-number-item {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.footer-divider {
+  border-bottom: 2px solid $primary;
+}
+
+.footer-map {
+  width: 376px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  user-select: none;
+}

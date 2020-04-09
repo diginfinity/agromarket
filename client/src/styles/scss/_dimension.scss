@@ -1,0 +1,85 @@
+@import "input-helpers";
+
+.dimension-custom {
+  width: 560px;
+}
+
+.dimension-form-boundary {
+  input {
+    height: 30px !important;
+    border: none;
+  }
+
+  background-color: white;
+}
+
+.dimension-border {
+  border: 1px solid #DCDCDC;
+  border-radius: 5px;
+}
+
+input[type="number"].dimension-search-input {
+  width: 78% !important;
+  appearance: none;
+}
+
+input[type="number"].dimension-remove-arrows {
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+
+  appearance: none;
+}
+
+.dimension-mm {
+  font-size: 12px;
+  user-select: none;
+}
+
+.form-group {
+  display: inline-block;
+  width: 100px;
+  margin: 0 8px;
+  label {
+    font-size: 10px;
+  }
+  // &:nth-child(4) {
+  //   width: 120px;
+  // }
+}
+
+.dimension {
+  border: none !important;
+  outline: none;
+  height: 30px !important;
+}
+
+.dimension-custom-padding {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.dimension-custom-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.dimension-search-button {
+  cursor: pointer;
+  display: inline-block;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+}
+
+.dimension-centered-button {
+  padding: 5px 0 0 7px;
+}
+
+.dimension-small-text {
+  font-size: 10px;
+  text-align: right;
+  margin-right: 4rem;
+}

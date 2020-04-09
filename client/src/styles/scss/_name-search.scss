@@ -1,14 +1,14 @@
 @import "input-helpers";
 
-.input1-custom {
+.name-search-custom {
   width: 285px;
 }
 
-.input1-form-boundary {
+.name-search-form-boundary {
   border: 1px solid rgb(102, 102, 102);
 }
 
-.input1 {
+.name-search {
   border: none !important;
   outline: none;
   max-width: 90% !important;
@@ -16,10 +16,10 @@
   height: 30px !important;
 }
 
-.input1-custom-padding {
+.name-search-custom-padding {
   padding: 1rem;
 }
 
-.input1-custom-margin-bottom {
+.name-search-custom-margin-bottom {
   margin-bottom: 40px;
 }

@@ -1,0 +1,13 @@
+@import "variables";
+
+.represent-card-container {
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  border-bottom: 1px solid white;
+  transition: all 100ms linear;
+  &:hover {
+    border-bottom: 1px solid $primary;
+  }
+  & p { margin-left: 1rem;}
+}
