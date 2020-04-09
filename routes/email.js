@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const debug = require("debug")("agromarket");
+const debug = require("debug")("agromarket:emailRoute");
 const Joi = require("joi");
-const validator = require("express-joi-validation").createValidator({});
-const nodemailer = require("nodemailer");
+const validator = require("express-joi-validation").createValidator();
+const { createTransport } = require("nodemailer");
 
 const itemSchema = Joi.object({
   fullName: Joi.string().required(),
@@ -19,7 +19,8 @@ router.post("/", validator.body(itemSchema), async (req, res) => {
 
   // create reusable transporter object using the default SMTP transport
   // https://ethereal.email/messages
-  let transporter = nodemailer.createTransport({
+
+  let transporter = createTransport({
     host: "smtp.ethereal.email",
     port: 587,
     secure: false, // true for 465, false for other ports
@@ -30,11 +31,11 @@ router.post("/", validator.body(itemSchema), async (req, res) => {
   });
 
   // verify connection configuration
-  transporter.verify(function (error, success) {
+  transporter.verify((error, success) => {
     if (error) {
       debug(error);
     } else {
-      debug("Server is ready to take our messages");
+      debug("Server is ready to take our messages", success);
     }
   });
 

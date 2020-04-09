@@ -2,21 +2,20 @@ const models = require("../models");
 const express = require("express");
 const router = express.Router();
 const { Op } = require("sequelize");
-const debug = require("debug")("agromarket");
 const Joi = require("joi");
 const validator = require("express-joi-validation").createValidator({});
 
 const itemSchema = Joi.object({
   title: Joi.string(),
-  radius: Joi.number().precision(3),
-  diameter: Joi.number().precision(3),
-  b: Joi.number().precision(3),
+  innerDiameter: Joi.number().precision(3),
+  outerDiameter: Joi.number().precision(3),
+  width: Joi.number().precision(3),
   page: Joi.number(),
   size: Joi.number(),
 });
 
 router.get("/", validator.query(itemSchema), async (req, res) => {
-  const { radius, diameter, b } = req.query;
+  const { innerDiameter, outerDiameter, width } = req.query;
   const title = req.query.title || "";
   const page = req.query.page || 1;
   const size = req.query.size || 10;
@@ -31,16 +30,16 @@ router.get("/", validator.query(itemSchema), async (req, res) => {
     limit: size,
   };
 
-  if (radius) {
-    findOptions.radius = radius;
+  if (innerDiameter) {
+    findOptions.innerDiameter = innerDiameter;
   }
 
-  if (diameter) {
-    findOptions.diameter = diameter;
+  if (outerDiameter) {
+    findOptions.outerDiameter = outerDiameter;
   }
 
-  if (b) {
-    findOptions.b = b;
+  if (width) {
+    findOptions.width = width;
   }
 
   const items = await models.item.findAll(findOptions);

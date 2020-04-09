@@ -15,17 +15,17 @@ module.exports = {
         allowNull: true,
       },
 
-      radius: {
+      innerDiameter: {
         type: Sequelize.DECIMAL(10, 3),
         allowNull: true,
       },
 
-      diameter: {
+      outerDiameter: {
         type: Sequelize.DECIMAL(10, 3),
         allowNull: true,
       },
 
-      b: {
+      width: {
         type: Sequelize.DECIMAL(10, 3),
         allowNull: true,
       },

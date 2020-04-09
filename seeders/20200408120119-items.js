@@ -6,9 +6,9 @@ module.exports = {
       {
         id: 1,
         title: "NA4900-2RSR-XL",
-        radius: 10.0,
-        diameter: 22.0,
-        b: 14.0,
+        innerDiameter: 10.0,
+        outerDiameter: 22.0,
+        width: 14.0,
         createdAt: "2020-04-09T07:45:07.000Z",
         updatedAt: "2020-04-09T07:45:07.000Z",
         link:
@@ -17,9 +17,9 @@ module.exports = {
       {
         id: 2,
         title: "NA4900-RSR-XL",
-        radius: 10.0,
-        diameter: 22.0,
-        b: 14.0,
+        innerDiameter: 10.0,
+        outerDiameter: 22.0,
+        width: 14.0,
         createdAt: "2020-04-09T07:45:07.000Z",
         updatedAt: "2020-04-09T07:45:07.000Z",
         link:
@@ -28,9 +28,9 @@ module.exports = {
       {
         id: 3,
         title: "NA4901-2RSR-XL",
-        radius: 12.0,
-        diameter: 24.0,
-        b: 14.0,
+        innerDiameter: 12.0,
+        outerDiameter: 24.0,
+        width: 14.0,
         createdAt: "2020-04-09T07:45:07.000Z",
         updatedAt: "2020-04-09T07:45:07.000Z",
         link:

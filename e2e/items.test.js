@@ -9,9 +9,9 @@ beforeEach(() => {
     {
       id: 1,
       title: "NA4900-2RSR-XL",
-      radius: "10.000",
-      diameter: "22.000",
-      b: "14.000",
+      innerDiameter: "10.000",
+      outerDiameter: "22.000",
+      width: "14.000",
       image: null,
       link:
         "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4900-2RSR-XL?pattern=NA4900-2RSR-XL",
@@ -22,9 +22,9 @@ beforeEach(() => {
     {
       id: 2,
       title: "NA4900-RSR-XL",
-      radius: "10.000",
-      diameter: "22.000",
-      b: "14.000",
+      innerDiameter: "10.000",
+      outerDiameter: "22.000",
+      width: "14.000",
       image: null,
       link:
         "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-RSR*NA4900-RSR-XL?pattern=NA4900-RSR-XL",
@@ -35,9 +35,9 @@ beforeEach(() => {
     {
       id: 3,
       title: "NA4901-2RSR-XL",
-      radius: "12.000",
-      diameter: "24.000",
-      b: "14.000",
+      innerDiameter: "12.000",
+      outerDiameter: "24.000",
+      width: "14.000",
       image: null,
       link:
         "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4901-2RSR-XL?pattern=NA4901-2RSR-XL",
@@ -56,11 +56,13 @@ it("should return a list of items", async (done) => {
   done();
 });
 
-it("should return a specific item by title, radius, diameter and b", async (done) => {
+it("should return a specific item by title, innerDiameter, outerDiameter and width", async (done) => {
   const expectedResponse = [mockItems[0]];
-  const { title, radius, diameter, b } = mockItems[0];
+  const { title, innerDiameter, outerDiameter, width } = mockItems[0];
 
-  const res = await request.get("/items").query({ title, radius, diameter, b });
+  const res = await request
+    .get("/items")
+    .query({ title, innerDiameter, outerDiameter, width });
 
   expect(res.status).toBe(200);
   expect(res.header);
@@ -81,11 +83,11 @@ it("should return error message if title is empty", async (done) => {
   done();
 });
 
-it("should return error message if radius is empty", async (done) => {
+it("should return error message if innerDiameter is empty", async (done) => {
   const expectedResponse =
-    'Error validating request query. "radius" must be a number.';
+    'Error validating request query. "innerDiameter" must be a number.';
 
-  const res = await request.get("/items").query({ radius: "" });
+  const res = await request.get("/items").query({ innerDiameter: "" });
 
   expect(res.status).toBe(400);
   expect(res.text).toBe(expectedResponse);
@@ -93,11 +95,11 @@ it("should return error message if radius is empty", async (done) => {
   done();
 });
 
-it("should return error message if diameter is empty", async (done) => {
+it("should return error message if outerDiameter is empty", async (done) => {
   const expectedResponse =
-    'Error validating request query. "diameter" must be a number.';
+    'Error validating request query. "outerDiameter" must be a number.';
 
-  const res = await request.get("/items").query({ diameter: "" });
+  const res = await request.get("/items").query({ outerDiameter: "" });
 
   expect(res.status).toBe(400);
   expect(res.text).toBe(expectedResponse);
@@ -105,11 +107,11 @@ it("should return error message if diameter is empty", async (done) => {
   done();
 });
 
-it("should return error message if b is empty", async (done) => {
+it("should return error message if width is empty", async (done) => {
   const expectedResponse =
-    'Error validating request query. "b" must be a number.';
+    'Error validating request query. "width" must be a number.';
 
-  const res = await request.get("/items").query({ b: "" });
+  const res = await request.get("/items").query({ width: "" });
 
   expect(res.status).toBe(400);
   expect(res.text).toBe(expectedResponse);
