@@ -1,0 +1,10 @@
+@import "variables";
+
+.text-card-container {
+  background-color: $text-card-bg;
+  color: $text-card-front;
+  border: 1px solid #F5F5F5;
+  padding: 1rem;
+  width: 50%;
+  margin: 0 1rem;
+}

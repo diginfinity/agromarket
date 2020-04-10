@@ -35,7 +35,7 @@ function Nav(props) {
               Katolozi
             </Link>
           </li>
-          <li className={where === "/asortiman" && props.additional ? "uk-text-bold nav-custom-link nav-custom-active" : "uk-text-bold nav-custom-link"}>
+          <li className={where.slice(0, 10) === "/asortiman" && props.additional ? "uk-text-bold nav-custom-link nav-custom-active" : "uk-text-bold nav-custom-link"}>
             <Link to="/asortiman" className={where !== "/asortiman" && props.additional ? "black": "white"}>
               Asortiman
             </Link>

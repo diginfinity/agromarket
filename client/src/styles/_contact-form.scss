@@ -1,0 +1,31 @@
+@import "variables";
+
+.contact-form-container {
+  background-color: $form-bg;
+  padding: 2rem 1rem;
+}
+
+.contact-form-fields {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-form-field {
+  padding-top: 10px;
+}
+
+.contact-form-submit {
+  background-color: $primary;
+  margin-top: 10px;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.contact-form-textarea {
+  height: 121px;
+  border-radius: 5px;
+  resize: none;
+}

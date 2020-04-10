@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+@import "scroller";
 @import "main";
 @import "nav";
 @import "variables";
@@ -11,6 +12,18 @@
 @import "represent-card";
 @import "other-card";
 @import "footer";
+@import "full-search-item";
+@import "about";
+@import "text-card";
+@import "logo-strip";
+@import "assortment";
+@import "table-card";
+@import "product";
+@import "catalogues";
+@import "catalogue-card";
+@import "contact";
+@import "contact-card";
+@import "contact-form";
 
 html {
   font-family: "Inter", sans-serif;
@@ -28,6 +41,10 @@ html {
   text-transform: uppercase;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .white {
   color: white !important;
 }
@@ -37,5 +54,27 @@ html {
 }
 
 .bg-primary {
+  background-color: $primary;
+}
+
+.border-primary {
   border: $primary;
+}
+
+.card-item-padding {
+  padding: 0 2rem;
+}
+
+.table-margin {
+  &-top {
+    margin-top: 1rem;
+  }
+
+  &-bot {
+    margin-bottom: 1rem;
+  }
+}
+
+.hr-black {
+  border-bottom: 2px solid black;
 }

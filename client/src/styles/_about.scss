@@ -1,0 +1,39 @@
+.about-main {
+  display: flex;
+}
+
+.about-text {
+  width: 75%;
+}
+
+.about-logos {
+  // height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-logo-row-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.about-logo-row-2 {
+  img {
+    display: inline-block;
+    padding: 5px;
+  }
+}
+
+.about-text-cards {
+  display: flex;
+  flex-grow: 1;
+}
+
+.about-flex-main-items {
+  display: flex;
+  flex-flow: wrap;
+}

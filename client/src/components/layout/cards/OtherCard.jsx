@@ -16,7 +16,7 @@ function OtherCard({ title, img, desc, to }) {
           </div>
         </div>
         <div className="uk-text-right">
-          <Link to={to} className="other-card-link">Pregledaj</Link>
+          <Link to={"/asortiman" + to} className="other-card-link">Pregledaj</Link>
         </div>
     </div>
   );

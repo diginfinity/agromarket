@@ -1,0 +1,38 @@
+.table-card-name-field {
+  display: flex;
+  padding: 1rem;
+}
+
+.table-card-name-details {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-left: 1rem;
+}
+
+.table-card-state-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 9px 18px;
+}
+
+.table-card-button--success {
+  color: #27AE60;
+  background-color: lighten(#6FCF97, 30%);
+}
+
+.table-card-desc-field {
+  max-width: 230px;
+  font-size: 14px;
+}
+
+.table-card-button--warning {
+  color: #F2994A;
+  background-color: lighten(#F2994A, 30%);
+}
+
+.table-card-button--danger {
+  color: #EB3237;
+  background-color: lighten(#EB3237, 30%);
+}

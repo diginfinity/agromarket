@@ -1,15 +1,13 @@
 import React, { useState, Fragment } from 'react';
-import NameSearch from '../layout/search/NameSearch';
-import DimensionSearch from '../layout/search/DimensionSearch';
-import FilterSearch from '../layout/search/FilterSearch';
 import TitleCard from '../layout/cards/TitleCard';
 import MainCard from '../layout/cards/MainCard';
 import RepresentCard from '../layout/cards/RepresentCard';
 import OtherCard from '../layout/cards/OtherCard';
-import LogoCard from '../layout/cards/LogoCard';
 import img from '../../assets/lezaj.svg';
 import logo from '../../assets/wurth.svg';
 import Footer from '../layout/pagepart/Footer';
+import FullSearchItem from '../layout/pagepart/FullSearchItem';
+import LogoStrip from '../layout/pagepart/LogoStrip';
 
 function Home() {
   const [mainItems, setMainItems] = useState([
@@ -109,53 +107,10 @@ function Home() {
     }
   ])
 
-  const [logos, setLogos] = useState([
-    {
-      title: "Continental",
-      logo
-    },
-    {
-      title: "Corteco",
-      logo
-    },
-    {
-      title: "CX",
-      logo
-    },
-    {
-      title: "Fam",
-      logo
-    },
-    {
-      title: "FKL",
-      logo
-    },
-    {
-      title: "Loctite",
-      logo
-    },
-    {
-      title: "Optibelt",
-      logo
-    },
-    {
-      title: "Timken",
-      logo
-    },
-    {
-      title: "Wurth",
-      logo
-    }
-  ])
-
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <div className="home-flex-search">
-          <NameSearch />
-          <DimensionSearch />
-          <FilterSearch />
-        </div>
+        <FullSearchItem />
         <div className="uk-margin-large-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
@@ -196,12 +151,8 @@ function Home() {
             />
           ))}
         </div>
-        <div className="uk-margin-bottom home-flex-logo-items">
-          {logos.map(item => (
-            <LogoCard key={item.title} title={item.title} logo={item.logo} />
-          ))}
-        </div>
       </div>
+      <LogoStrip />
       <Footer />
     </Fragment>
   );
