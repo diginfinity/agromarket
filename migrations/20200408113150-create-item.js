@@ -31,8 +31,8 @@ const up = (queryInterface, Sequelize) => {
     link: {
       type: Sequelize.STRING(),
     },
-    type: {
-      type: Sequelize.STRING(),
+    categoryId: {
+      type: Sequelize.INTEGER(),
     },
     deletedAt: {
       allowNull: true,

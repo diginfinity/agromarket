@@ -8,42 +8,45 @@ beforeEach(() => {
   mockItems = [
     {
       id: 1,
-      title: "NA4900-2RSR-XL",
-      innerDiameter: "10.000",
-      outerDiameter: "22.000",
-      width: "14.000",
-      image: null,
+      title: "AXK0414-TV/0-10",
+      innerDiameter: 4.0,
+      outerDiameter: 14.0,
+      width: 2.0,
+      image: "",
       link:
-        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4900-2RSR-XL?pattern=NA4900-2RSR-XL",
+        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/AXK*AXK0414-TV?pattern=AXK0414-TV",
+      categoryId: 1,
       deletedAt: null,
-      createdAt: "2020-04-09T07:45:07.000Z",
-      updatedAt: "2020-04-09T07:45:07.000Z",
+      createdAt: "2020-04-10T08:54:35.394Z",
+      updatedAt: "2020-04-10T08:54:35.394Z",
     },
     {
       id: 2,
-      title: "NA4900-RSR-XL",
-      innerDiameter: "10.000",
-      outerDiameter: "22.000",
-      width: "14.000",
-      image: null,
+      title: "AXK0515-TV/0-10",
+      innerDiameter: 5.0,
+      outerDiameter: 15.0,
+      width: 2.0,
+      image: "",
       link:
-        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-RSR*NA4900-RSR-XL?pattern=NA4900-RSR-XL",
+        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/AXK*AXK0515-TV?pattern=AXK0515-TV",
+      categoryId: 1,
       deletedAt: null,
-      createdAt: "2020-04-09T07:45:07.000Z",
-      updatedAt: "2020-04-09T07:45:07.000Z",
+      createdAt: "2020-04-10T08:54:35.394Z",
+      updatedAt: "2020-04-10T08:54:35.394Z",
     },
     {
       id: 3,
-      title: "NA4901-2RSR-XL",
-      innerDiameter: "12.000",
-      outerDiameter: "24.000",
-      width: "14.000",
-      image: null,
+      title: "AXK0619-TV/0-10",
+      innerDiameter: 6.0,
+      outerDiameter: 19.0,
+      width: 2.0,
+      image: "",
       link:
-        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/NA49..-2RSR*NA4901-2RSR-XL?pattern=NA4901-2RSR-XL",
+        "https://medias.schaeffler.com/medias/en!hp.ec.br.pr/AXK*AXK0619-TV?pattern=AXK0619-TV",
+      categoryId: 1,
       deletedAt: null,
-      createdAt: "2020-04-09T07:45:07.000Z",
-      updatedAt: "2020-04-09T07:45:07.000Z",
+      createdAt: "2020-04-10T08:54:35.394Z",
+      updatedAt: "2020-04-10T08:54:35.394Z",
     },
   ];
 });
@@ -52,12 +55,12 @@ it("should return a list of items", async (done) => {
   const res = await request.get("/items");
 
   expect(res.status).toBe(200);
-  expect(res.body).toStrictEqual(mockItems);
+  expect(res.body.length).toBeGreaterThan(1);
   done();
 });
 
 it("should return a specific item by title, innerDiameter, outerDiameter and width", async (done) => {
-  const expectedResponse = [mockItems[0]];
+  const expectedResponse = [{ id: mockItems[0].id }];
   const { title, innerDiameter, outerDiameter, width } = mockItems[0];
 
   const res = await request
@@ -67,7 +70,9 @@ it("should return a specific item by title, innerDiameter, outerDiameter and wid
   expect(res.status).toBe(200);
   expect(res.header);
 
-  expect(res.body).toStrictEqual(expectedResponse);
+  expect(res.body.length).toBe(1);
+
+  expect(res.body[0].id).toBe(expectedResponse[0].id);
   done();
 });
 

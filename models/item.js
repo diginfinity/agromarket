@@ -1,5 +1,6 @@
 "use strict";
-module.exports = (sequelize, DataTypes) => {
+
+const Item = (sequelize, DataTypes) => {
   const model = {
     id: {
       allowNull: false,
@@ -11,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING(),
       allowNull: true,
     },
+
     innerDiameter: {
       type: DataTypes.DECIMAL(10, 3),
       allowNull: true,
@@ -49,11 +51,15 @@ module.exports = (sequelize, DataTypes) => {
     paranoid: true,
   };
 
-  const item = sequelize.define("item", model, modelOptions);
+  const Item = sequelize.define("Item", model, modelOptions);
 
-  item.associate = function (models) {
-    // associations can be defined here
+  Item.associate = function (models) {
+    const { Category } = models;
+
+    Item.belongsTo(Category);
   };
 
-  return item;
+  return Item;
 };
+
+module.exports = Item;
