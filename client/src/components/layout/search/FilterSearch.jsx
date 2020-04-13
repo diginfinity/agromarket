@@ -21,7 +21,7 @@ function FilterSearch() {
   const [filterSelection, setFilterSelection] = useState("")
 
   return (
-    <div className="filter-search-custom input-colour-border filter-search-custom-padding uk-margin-left">
+    <div className="filter-search-custom input-colour-border filter-search-custom-padding uk-margin-left" id="step3">
       <p className="filter-search-custom-margin-bottom text-primary upper smaller">
         Filter:
       </p>

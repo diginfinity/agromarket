@@ -24,6 +24,7 @@
 @import "contact";
 @import "contact-card";
 @import "contact-form";
+@import "help-card";
 
 html {
   font-family: "Inter", sans-serif;
@@ -77,4 +78,12 @@ html {
 
 .hr-black {
   border-bottom: 2px solid black;
+}
+
+#step1,
+#step2,
+#step3,
+#step4,
+#step5 {
+  position: relative;
 }

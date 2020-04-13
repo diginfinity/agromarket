@@ -33,12 +33,6 @@ function Catalogues() {
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <FullSearchItem />
-        <div className="uk-text-right uk-margin-top">
-          <button className="uk-button uk-border-rounded uk-text-bold bg-primary white">
-            Pomoc
-          </button>
-        </div>
         <div className="uk-margin-large-top">
           <TitleCard title="Katalozi" />
         </div>

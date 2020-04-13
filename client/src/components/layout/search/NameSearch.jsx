@@ -4,7 +4,7 @@ function NameSearch() {
   const [state, setState] = useState("")
 
   return (
-    <div className="name-search-custom input-colour-border name-search-custom-padding uk-margin-left">
+    <div className="name-search-custom input-colour-border name-search-custom-padding uk-margin-left" id="step1">
       <p className="name-search-custom-margin-bottom text-primary upper smaller">Pretrazite prema sifri ili pojmu:</p>
       <div className="name-search-form-boundary">
         <input

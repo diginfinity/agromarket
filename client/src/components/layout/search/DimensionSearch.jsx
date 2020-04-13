@@ -9,7 +9,7 @@ function DimensionSearch() {
   const search = () => console.log("Searching");
 
   return (
-    <div className="dimension-custom input-colour-border dimension-custom-padding uk-margin-left">
+    <div className="dimension-custom input-colour-border dimension-custom-padding uk-margin-left" id="step2">
       <p className="dimension-custom-margin-bottom text-primary upper smaller">Pretrazite po dimenzijama:</p>
       <div>
         <div className="form-group">

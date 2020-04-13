@@ -1,0 +1,73 @@
+.help-card-placer {
+  position: absolute;
+  z-index: 5;
+}
+
+.help-card-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 240px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.help-card-number {
+  &-container {
+    position: absolute;
+    top: -20px;
+    width: 34px;
+    height: 34px;
+    left: -20px;
+    background-color: transparent;
+    border: 3px solid black;
+    padding: 4px;
+    border: 2px solid #EB3237;
+    border-radius: 50%;
+  }
+
+  border-radius: 50%;
+  background-color: #EB3237;
+  width: 34px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.help-card-progress {
+  display: flex;
+  justify-content: center;
+  &-step {
+    width: 7px;
+    height: 7px;
+    background-color: darkgray;
+    border-radius: 50%;
+    margin-left: 7px;
+    &-active {
+      background-color: white;
+    }
+  }
+}
+
+.help-card-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.help-card-next-prev-controller {
+  text-align: right;
+}
+
+.help-card-prev {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.help-card-next {
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}

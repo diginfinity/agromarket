@@ -83,12 +83,6 @@ function Product(props) {
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <FullSearchItem />
-        <div className="uk-text-right uk-margin-top">
-          <button className="uk-button uk-border-rounded uk-text-bold bg-primary white">
-            Pomoc
-          </button>
-        </div>
         <h3 className="capitalize text-primary uk-text-bold">{name}</h3>
         <table>
           <thead>

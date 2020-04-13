@@ -3,12 +3,12 @@ import NameSearch from '../search/NameSearch';
 import DimensionSearch from '../search/DimensionSearch';
 import FilterSearch from '../search/FilterSearch';
 
-function FullSearchItem() {
+function FullSearchItem({ nameSearchRef, filterSearchRef, dimensionSearchRef }) {
   return (
     <div className="full-search-item-flex-search">
-      <NameSearch />
-      <DimensionSearch />
-      <FilterSearch />
+      <NameSearch nameSearchRef={nameSearchRef}/>
+      <DimensionSearch dimensionSearchRef={dimensionSearchRef}/>
+      <FilterSearch filterSearchRef={filterSearchRef}/>
     </div>
   );
 }

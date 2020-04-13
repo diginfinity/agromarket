@@ -15,25 +15,33 @@ function Home() {
       title: "Lezajevi",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
       img,
-      isAccentuated: true
+      isAccentuated: true,
+      to: "/lezajevi",
+      text: "Pogledajte sve  lezajeve"
     },
     {
       title: "Spojnice",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
       img,
-      isAccentuated: false
+      isAccentuated: false,
+      to: "/spojnice",
+      text: "Pogledajte sve spojnice"
     },
     {
       title: "Kucista",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
       img,
-      isAccentuated: false
+      isAccentuated: false,
+      to: "/kucista",
+      text: "Pogledajte sva kucista"
     },
     {
       title: "Remeni",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
       img,
-      isAccentuated: false
+      isAccentuated: true,
+      to: "/remeni",
+      text: "Pogledajte sve remene"
     }
   ])
 
@@ -110,7 +118,6 @@ function Home() {
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <FullSearchItem />
         <div className="uk-margin-large-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
@@ -122,6 +129,8 @@ function Home() {
               desc={item.desc}
               img={item.img}
               isAccentuated={item.isAccentuated}
+              to={item.to}
+              text={item.text}
             />
           ))}
         </div>

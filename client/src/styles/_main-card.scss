@@ -17,3 +17,16 @@
 .main-card-content {
   margin-left: 1rem;
 }
+
+.main-card-danger-link {
+  background-color: #EB3237;
+  color: white;
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 5px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}

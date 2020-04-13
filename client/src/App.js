@@ -8,6 +8,7 @@ import Assortment from './components/pages/Assortment';
 import Catalogues from './components/pages/Catalogues';
 import Product from './components/pages/Product';
 import Contact from './components/pages/Contact';
+import HelpCard from './components/layout/cards/HelpCard';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/asortiman/:name" component={Product} />
           <Route exact path="/katalozi" component={Catalogues} />
           <Route exact path="/kontakt" component={Contact} />
+          <Route exact path="/help" component={HelpCard} />
         </Fragment>
       </Switch>
     </Router>
