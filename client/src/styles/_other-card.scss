@@ -1,22 +1,41 @@
 @import "variables";
+@import "mixins";
 
 .other-card-container {
   display: block;
   margin: 1rem;
   max-width: 30%;
   border-bottom: 2px solid $primary;
+  @include phone {
+    border-bottom: none;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .other-card-img-content-bundle {
   display: flex;
+  @include phone {
+    justify-content: space-between;
+  }
 }
 
 .other-card-image {
   margin-right: 1rem;
+  @include phone {
+    height: 53px;
+    width: 48px;
+    order: 2;
+  };
 }
 
 .other-card-content {
   margin-left: 1rem;
+  h3 {
+    @include phone {
+      order: 1;
+    }
+  }
 }
 
 .other-card-link {
@@ -26,6 +45,5 @@
   &:hover {
     color: white;
   }
-  // align-self: flex-end;
   padding: 5px 3rem;
 }

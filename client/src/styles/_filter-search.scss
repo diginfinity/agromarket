@@ -1,11 +1,23 @@
 @import "variables";
+@import "mixins";
 
 .filter-search-custom {
   width: 267px;
+  @include phone {
+    width: 85%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  };
 }
 
 .filter-search-custom-padding {
   padding: 1rem;
+}
+
+.filter-search-custom-margin-bottom {
+  @include phone {
+    margin-bottom: 0;
+  };
 }
 
 .filter-search-category-name {

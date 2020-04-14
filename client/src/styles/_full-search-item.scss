@@ -1,4 +1,9 @@
+@import "mixins";
+
 .full-search-item-flex-search {
   display: flex;
   justify-content: space-between;
+  @include phone {
+    flex-direction: column;
+  };
 }

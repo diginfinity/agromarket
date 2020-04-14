@@ -1,25 +1,40 @@
 @import "input-helpers";
+@import "mixins";
 
 .name-search-custom {
   width: 285px;
+  @include phone {
+    width: 88%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  };
 }
 
 .name-search-form-boundary {
   border: 1px solid rgb(102, 102, 102);
+  width: 90% !important;
+  margin: auto;
+  @include phone {
+    width: 80% !important;
+  };
 }
 
 .name-search {
   border: none !important;
   outline: none;
-  max-width: 90% !important;
-  width: 90% !important;
+  width: 90%;
   height: 30px !important;
+  margin: auto;
+
 }
 
 .name-search-custom-padding {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .name-search-custom-margin-bottom {
   margin-bottom: 40px;
+  @include phone {
+    margin-bottom: 0;
+  };
 }

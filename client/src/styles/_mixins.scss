@@ -1,0 +1,13 @@
+@import "variables";
+
+@mixin phone {
+  @media (min-width: $phone-min) and (max-width: $phone-max) { @content; }
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-portrait-min) and (max-width: $tablet-portrait-max) { @content; }
+}
+
+@mixin laptop {
+  @media (min-width: $laptop-min) and (max-width: $laptop-max) { @content; }
+}

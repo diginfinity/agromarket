@@ -1,3 +1,5 @@
+@import "mixins";
+
 .home-flex-search {
   display: flex;
   justify-content: space-between;
@@ -8,6 +10,13 @@
 .home-flex-other-items {
   display: flex;
   flex-flow: wrap;
+}
+
+.home-flex-represent-items {
+  @include phone {
+    flex-flow: row nowrap;
+    width: 100%;
+  };
 }
 
 .home-flex-logo-items {

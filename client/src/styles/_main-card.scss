@@ -1,9 +1,13 @@
 @import "variables";
+@import "mixins";
 
 .main-card-container {
   display: flex;
   padding: 1rem;
   max-width: 45%;
+  @include phone {
+    max-width: 100%
+  };
 }
 
 .main-card-container-accent {

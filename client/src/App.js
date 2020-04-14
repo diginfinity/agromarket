@@ -9,6 +9,7 @@ import Catalogues from './components/pages/Catalogues';
 import Product from './components/pages/Product';
 import Contact from './components/pages/Contact';
 import HelpCard from './components/layout/cards/HelpCard';
+import DimensionSearch from './components/layout/search/DimensionSearch';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/katalozi" component={Catalogues} />
           <Route exact path="/kontakt" component={Contact} />
           <Route exact path="/help" component={HelpCard} />
+          <Route exact path="/dim" component={DimensionSearch} />
         </Fragment>
       </Switch>
     </Router>

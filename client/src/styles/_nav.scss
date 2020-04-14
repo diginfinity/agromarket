@@ -34,3 +34,26 @@
   margin: 0 10px;
   color: $secondary;
 }
+
+.nav-select {
+  border: none;
+  outline: none;
+  margin: 4px 0 0 5px;
+  font-size: 0.9rem;
+  padding: 0 !important;
+  -webkit-appearance: menulist-button !important;
+  background-image: none !important;
+}
+
+.nav-custom-logo {
+  align-self: flex-end;
+  margin-left: 160px;
+}
+
+.nav-main-custom-margin-right {
+  margin-right: 40px;
+}
+
+.nav-help-custom-margin-right {
+  margin-left: 60px;
+}

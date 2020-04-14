@@ -1,3 +1,4 @@
+// COLOURS
 $primary: #EB3237;
 $secondary: #A0A0A0;
 $card-bg: #F5F5F5;
@@ -5,3 +6,15 @@ $footer-bg: #202020;
 $text-card-bg: #FAFAFA;
 $text-card-front: #202020;
 $form-bg: #202020;
+
+// BREAKPOINTS
+$phone-min: 320px;
+$phone-max: 599px;
+$tablet-portrait-min: 600px;
+$tablet-portrait-max: 899px;
+$tablet-landscape-min: 900px;
+$tablet-landscape-max: 1199px;
+$laptop-min: 1200px;
+$laptop-max: 1599px;
+$desktop-min: 1600px;
+$desktop-max: 1920px;
