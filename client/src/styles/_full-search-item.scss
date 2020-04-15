@@ -3,7 +3,16 @@
 .full-search-item-flex-search {
   display: flex;
   justify-content: space-between;
+
+  @include landscapetablet {
+    flex-direction: column;
+  }
+
+  @include portraittablet {
+    flex-direction: column;
+  }
+
   @include phone {
     flex-direction: column;
-  };
+  }
 }

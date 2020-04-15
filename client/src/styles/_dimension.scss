@@ -3,11 +3,24 @@
 
 .dimension-custom {
   max-width: 560px;
-  @include phone {
-    width: 85%;
+
+  @include landscapetablet {
+    max-width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
-  };
+  }
+
+  @include portraittablet {
+    max-width: 85%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
+
+  @include phone {
+    max-width: 85%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
 }
 
 .dimension-form-boundary {
@@ -47,22 +60,31 @@ input[type="number"].dimension-remove-arrows {
 }
 
 .dimension-form-group-holder {
-  // @include phone {
-    display: flex;
-    flex-wrap: wrap;
-  // };
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form-group {
   display: inline-block;
   width: 100px;
   margin: 0 8px;
+
   label {
     font-size: 10px;
   }
+
+  @include landscapetablet {
+    width: 45%;
+  }
+
+  @include portraittablet {
+    width: 45%;
+  }
+
   @include phone {
     width: 45%;
-  };
+  }
+
   &:nth-child(4) {
     flex-flow: column;
   }
@@ -80,22 +102,39 @@ input[type="number"].dimension-remove-arrows {
 
 .dimension-custom-margin-bottom {
   margin-bottom: 20px;
+
+  @include landscapetablet {
+    margin-bottom: 0;
+  }
+
+  @include portraittablet {
+    margin-bottom: 0;
+  }
+
   @include phone {
     margin-bottom: 0;
-  };
+  }
 }
 
 .dimension-search-button {
   cursor: pointer;
-  // display: inline-block;
   align-self: center;
   background-color: white;
   height: 30px;
   width: 30px;
   margin-top: 10px;
+
+  @include landscapetablet {
+    margin-left: auto;
+  }
+
+  @include portraittablet {
+    margin-left: auto;
+  }
+
   @include phone {
     margin-left: auto;
-  };
+  }
 }
 
 .dimension-centered-button {
@@ -103,7 +142,6 @@ input[type="number"].dimension-remove-arrows {
 }
 
 .dimension-small-text {
-  // font-size: 10px;
     text-align: right;
     margin-right: 4rem;
     width: 100%;

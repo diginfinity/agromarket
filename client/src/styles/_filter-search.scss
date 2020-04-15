@@ -3,11 +3,24 @@
 
 .filter-search-custom {
   width: 267px;
+
+  @include landscapetablet {
+    width: 85%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
+
+  @include portraittablet {
+    width: 85%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
+
   @include phone {
     width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
-  };
+  }
 }
 
 .filter-search-custom-padding {
@@ -15,9 +28,17 @@
 }
 
 .filter-search-custom-margin-bottom {
+  @include landscapetablet {
+    margin-bottom: 0;
+  }
+
+  @include portraittablet {
+    margin-bottom: 0;
+  }
+
   @include phone {
     margin-bottom: 0;
-  };
+  }
 }
 
 .filter-search-category-name {

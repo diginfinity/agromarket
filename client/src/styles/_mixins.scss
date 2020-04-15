@@ -5,7 +5,19 @@
 }
 
 @mixin tablet {
+  @media (min-width: $tablet-portrait-min) and (max-width: $tablet-landscape-max) { @content; }
+}
+
+@mixin portraittablet {
   @media (min-width: $tablet-portrait-min) and (max-width: $tablet-portrait-max) { @content; }
+}
+
+@mixin landscapetablet {
+  @media (min-width: $tablet-landscape-min) and (max-width: $tablet-landscape-max) { @content; }
+}
+
+@mixin footerphone {
+  @media (min-width: $phone-min) and (max-width: 800px) { @content; }
 }
 
 @mixin laptop {

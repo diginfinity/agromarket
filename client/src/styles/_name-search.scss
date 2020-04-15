@@ -3,20 +3,42 @@
 
 .name-search-custom {
   width: 285px;
+
+  @include landscapetablet {
+    width: 88%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
+
+  @include portraittablet {
+    width: 88%;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.06);
+    border-top: 3px solid rgba(0, 0, 0, 0.06);
+  }
+
   @include phone {
     width: 88%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
-  };
+  }
 }
 
 .name-search-form-boundary {
   border: 1px solid rgb(102, 102, 102);
   width: 90% !important;
   margin: auto;
+
+  @include landscapetablet {
+    width: 80% !important;
+  }
+
+  @include portraittablet {
+    width: 80% !important;
+  }
+
   @include phone {
     width: 80% !important;
-  };
+  }
 }
 
 .name-search {
@@ -25,7 +47,6 @@
   width: 90%;
   height: 30px !important;
   margin: auto;
-
 }
 
 .name-search-custom-padding {
@@ -34,7 +55,16 @@
 
 .name-search-custom-margin-bottom {
   margin-bottom: 40px;
+
+  @include landscapetablet {
+    margin-bottom: 0;
+  }
+
+  @include portraittablet {
+    margin-bottom: 0;
+  }
+
   @include phone {
     margin-bottom: 0;
-  };
+  }
 }

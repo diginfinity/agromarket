@@ -1,7 +1,59 @@
 @import "variables.scss";
+@import "mixins";
 
 .uk-navbar-nav > li > a {
   min-height: 50px ;
+}
+
+.nav-tablet-flex {
+  display: flex;
+  flex-flow: column;
+}
+
+.nav-upper-tablet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-smaller-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: red;
+}
+
+.nav-smaller-devices {
+  margin: 0 1rem 0 0.5rem;
+  justify-content: space-between;
+}
+
+.nav-custom-hamburger {
+  position: relative;
+  z-index: 4;
+  background-color: white;
+}
+
+.nav-smaller-container {
+  display: block;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: -1rem;
+  background-color: #202020;
+  z-index: 10;
+  padding: 2rem 1rem 1rem 1rem;
+  li {
+    width: 90%;
+    margin-left: auto;
+    padding: 1rem 0;
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .nav-custom-active {
@@ -12,22 +64,34 @@
     height: 50px !important;
     min-height: 50px !important;
   }
+  @include phone {
+    border-bottom: none;
+  }
 }
 
 .nav-custom-container {
   max-width: 1200px;
   margin: 0 121px 0 auto;
   flex-direction: column;
+  @include tablet {
+    margin: 0 0 0 auto;
+  }
+
+  @include phone {
+    margin: 0;
+  }
 }
 
 .nav-custom-link {
   max-height: 40px;
   font-size: 18px;
+  @include phone {
+    display: block;
+  }
 }
 
 .nav-custom-placement {
   font-size: 12px;
-
 }
 
 .nav-custom-moveaway {
@@ -48,10 +112,21 @@
 .nav-custom-logo {
   align-self: flex-end;
   margin-left: 160px;
+
+  @include tablet {
+    margin-left: 0 !important;
+  }
+
+  @include phone {
+    margin-left: 0 !important;
+  }
 }
 
 .nav-main-custom-margin-right {
   margin-right: 40px;
+  @include phone {
+    margin-right: 0;
+  }
 }
 
 .nav-help-custom-margin-right {
