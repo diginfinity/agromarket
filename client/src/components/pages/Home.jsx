@@ -1,7 +1,7 @@
 import React, { useState, Fragment } from 'react';
 import TitleCard from '../layout/cards/TitleCard';
 import MainCard from '../layout/cards/MainCard';
-import RepresentCard from '../layout/cards/RepresentCard';
+import RepresentContainer from '../layout/pagepart/RepresentContainer';
 import OtherCard from '../layout/cards/OtherCard';
 import img from '../../assets/lezaj.svg';
 import logo from '../../assets/wurth.svg';
@@ -42,37 +42,6 @@ function Home() {
       isAccentuated: true,
       to: "/remeni",
       text: "Pogledajte sve remene"
-    }
-  ])
-
-  const [represent, setRepresent] = useState([
-    {
-      name: "Fag",
-      img
-    },
-    {
-      name: "Loctite",
-      img
-    },
-    {
-      name: "Schaeffer Group",
-      img
-    },
-    {
-      name: "Corteco",
-      img
-    },
-    {
-      name: "CX",
-      img
-    },
-    {
-      name: "Fam Krusevac",
-      img
-    },
-    {
-      name: "Ostali brendovi",
-      img
     }
   ])
 
@@ -137,15 +106,7 @@ function Home() {
         <div className="uk-margin-large-top">
           <TitleCard title="Zastupamo" />
         </div>
-        <div className="uk-margin-large-top home-flex-represent-items">
-          {represent.map(item => (
-            <RepresentCard
-              key={item.name}
-              name={item.name}
-              img={item.img}
-            />
-          ))}
-        </div>
+        <RepresentContainer />
         <div className="uk-margin-large-top">
           <TitleCard title="Ostalo u ponudi" />
         </div>

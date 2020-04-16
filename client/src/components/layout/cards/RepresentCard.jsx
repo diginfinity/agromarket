@@ -1,12 +1,29 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 function RepresentCard({ name, img }) {
-  return (
+  const isTablet = useMediaQuery({ minWidth: 601, maxWidth: 1224 });
+  const isMobile = useMediaQuery({ maxWidth: 600 })
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1225 });
+
+  return isDesktopOrLaptop ? (
     <div className="represent-card-container uk-margin-small">
       {img && <img src={img} uk-img />}
-      <p>{name}</p>
+      <p className="uk-panel">{name}</p>
     </div>
-  );
+  ) : isTablet ? (
+    <div className="represent-card-container uk-margin-small">
+      {img && <img src={img} uk-img />}
+      <p className="uk-panel">{name}</p>
+    </div>
+  ) : isMobile ? (
+    <li style={{display: 'flex', justifyContent: "center"}}>
+      <div className="represent-card-container uk-margin-small">
+        {img && <img src={img} uk-img />}
+        <p className="uk-panel">{name}</p>
+      </div>
+    </li>
+  ) : null;
 }
 
 export default RepresentCard;

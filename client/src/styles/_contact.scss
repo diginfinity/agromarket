@@ -1,5 +1,15 @@
+@import "mixins";
+
 .contact-information {
   display: flex;
+
+  @include portraittablet {
+    justify-content: space-between;
+  }
+
+  @include phone {
+    justify-content: center;
+  }
 }
 
 .contact-people {
@@ -7,6 +17,10 @@
   flex-flow: row wrap;
   width: 60%;
   margin-right: 1rem;
+  @include portraittablet {
+    width: 100%;
+    margin: 20px 0 20px 0 !important;
+  }
 }
 
 .contact-flex-main-items {

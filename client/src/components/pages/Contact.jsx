@@ -7,8 +7,13 @@ import LogoStrip from '../layout/pagepart/LogoStrip';
 import Footer from '../layout/pagepart/Footer';
 import img from '../../assets/lezaj.svg';
 import MainCard from '../layout/cards/MainCard';
+import { useMediaQuery } from 'react-responsive';
 
 function Contact() {
+  const isTablet = useMediaQuery({ minWidth: 600, maxWidth: 1224 });
+  const isMobile = useMediaQuery({ maxWidth: 599 })
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1225 });
+
   const [person, setPerson] = useState([
     {
       name: "Zoran Radenkovic",
@@ -77,7 +82,7 @@ function Contact() {
     }
   ])
 
-  return (
+  return isDesktopOrLaptop ? (
     <Fragment>
       <div className="uk-container uk-margin-top">
         <div className="contact-phone-address">
@@ -129,7 +134,111 @@ function Contact() {
       <LogoStrip />
       <Footer />
     </Fragment>
-  );
+  ) : isMobile ? (
+    <Fragment>
+      <div className="uk-container uk-margin-top">
+        <div className="contact-phone-address">
+          <p className="uk-text-bold black">
+            <i className="fas fa-home"></i>&nbsp;&nbsp;
+            Novosadski put 74, Veternik
+          </p>
+          <p className="uk-text-bold black">
+            <i className="fas fa-phone"></i>&nbsp;&nbsp;
+            <span className="uk-margin-right">021/823-424,</span>
+            <span className="uk-margin-right">021/823-425,</span>
+            <span className="uk-margin-right">021/822-459</span>
+          </p>
+          <hr className="hr-black"/>
+        </div>
+        <div className="contact-information">
+          <div className="uk-margin-top contact-people">
+            {person.map(p => (
+              <ContactCard
+                key={p.phone}
+                name={p.name}
+                title={p.title}
+                email={p.email}
+                phone={p.phone}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="contact-form">
+          <ContactForm />
+        </div>
+        <div className="uk-margin-top">
+          <TitleCard title="Najpopularniji proizvodi" />
+        </div>
+        <div className="uk-margin-top uk-margin-bottom contact-flex-main-items">
+          {mainItems.map(item => (
+            <MainCard
+              key={item.title}
+              title={item.title}
+              desc={item.desc}
+              img={item.img}
+              isAccentuated={item.isAccentuated}
+              to={item.to}
+              text={item.text}
+            />
+          ))}
+        </div>
+      </div>
+      <LogoStrip />
+      <Footer />
+    </Fragment>
+  ) : isTablet ? (
+    <Fragment>
+      <div className="uk-container uk-margin-top">
+        <div className="contact-phone-address">
+          <p className="uk-text-bold black">
+            <i className="fas fa-home"></i>&nbsp;&nbsp;
+            Novosadski put 74, Veternik
+          </p>
+          <p className="uk-text-bold black">
+            <i className="fas fa-phone"></i>&nbsp;&nbsp;
+            <span className="uk-margin-right">021/823-424,</span>
+            <span className="uk-margin-right">021/823-425,</span>
+            <span className="uk-margin-right">021/822-459</span>
+          </p>
+          <hr className="hr-black"/>
+        </div>
+        <div className="contact-information">
+          <div className="uk-margin-top contact-people">
+            {person.map(p => (
+              <ContactCard
+                key={p.phone}
+                name={p.name}
+                title={p.title}
+                email={p.email}
+                phone={p.phone}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="contact-form">
+          <ContactForm />
+        </div>
+        <div className="uk-margin-top">
+          <TitleCard title="Najpopularniji proizvodi" />
+        </div>
+        <div className="uk-margin-top uk-margin-bottom contact-flex-main-items">
+          {mainItems.map(item => (
+            <MainCard
+              key={item.title}
+              title={item.title}
+              desc={item.desc}
+              img={item.img}
+              isAccentuated={item.isAccentuated}
+              to={item.to}
+              text={item.text}
+            />
+          ))}
+        </div>
+      </div>
+      <LogoStrip />
+      <Footer />
+    </Fragment>
+  ) : null
 }
 
 export default Contact;

@@ -22,6 +22,10 @@
   border: none;
   width: 100%;
   border-radius: 5px;
+  @include portraittablet {
+    padding: 15px 0;
+    font-size: 1.1rem;
+  };
 }
 
 .contact-form-textarea {

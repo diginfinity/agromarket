@@ -25,6 +25,7 @@
 @import "contact-card";
 @import "contact-form";
 @import "help-card";
+@import "represent-container";
 
 html {
   font-family: "Inter", sans-serif;
@@ -91,4 +92,8 @@ html {
 
 .pointer {
   cursor: pointer;
+}
+
+.rel {
+  position: relative;
 }
