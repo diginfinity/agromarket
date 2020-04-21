@@ -1,43 +1,48 @@
 import React, { useState } from 'react';
 import RepresentCard from '../cards/RepresentCard';
-import img from '../../../assets/lezaj.svg';
+import fag from '../../../assets/fag.svg';
+import loctite from '../../../assets/loctite.svg';
+import schaeffer from '../../../assets/schaeffer.svg';
+import corteco from '../../../assets/corteco.svg';
+import fam from '../../../assets/fam.svg';
+import CX from '../../../assets/remen.svg';
 import { useMediaQuery } from 'react-responsive';
 
 function RepresentContainer() {
   const [represent, setRepresent] = useState([
     {
       name: "Fag",
-      img,
+      img: fag,
       place: 1,
     },
     {
       name: "Loctite",
-      img,
+      img: loctite,
       place: 2,
     },
     {
       name: "Schaeffer Group",
-      img,
+      img: schaeffer,
       place: 3,
     },
     {
       name: "Corteco",
-      img,
+      img: corteco,
       place: 4,
     },
     {
       name: "CX",
-      img,
+      img: CX,
       place: 5,
     },
     {
       name: "Fam Krusevac",
-      img,
+      img: fam,
       place: 6,
     },
     {
       name: "Ostali brendovi",
-      img,
+      img: corteco,
       place: 7,
     }
   ])

@@ -3,8 +3,13 @@ import TitleCard from '../layout/cards/TitleCard';
 import MainCard from '../layout/cards/MainCard';
 import RepresentContainer from '../layout/pagepart/RepresentContainer';
 import OtherCard from '../layout/cards/OtherCard';
-import img from '../../assets/lezaj.svg';
-import logo from '../../assets/wurth.svg';
+import lezaj from '../../assets/lezaj.svg';
+import hilzna from '../../assets/hilzna.svg';
+import spojnica from '../../assets/spojnica.svg';
+import kuciste from '../../assets/kuciste.svg';
+import remen from '../../assets/remen.svg';
+import remen2 from '../../assets/remen2.svg';
+import logo from '../../assets/logos/wurth.svg';
 import Footer from '../layout/pagepart/Footer';
 import FullSearchItem from '../layout/pagepart/FullSearchItem';
 import LogoStrip from '../layout/pagepart/LogoStrip';
@@ -14,7 +19,7 @@ function Home() {
     {
       title: "Lezajevi",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
-      img,
+      img: lezaj,
       isAccentuated: true,
       to: "/lezajevi",
       text: "Pogledajte sve  lezajeve"
@@ -22,7 +27,7 @@ function Home() {
     {
       title: "Spojnice",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
-      img,
+      img: spojnica,
       isAccentuated: false,
       to: "/spojnice",
       text: "Pogledajte sve spojnice"
@@ -30,7 +35,7 @@ function Home() {
     {
       title: "Kucista",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
-      img,
+      img: kuciste,
       isAccentuated: false,
       to: "/kucista",
       text: "Pogledajte sva kucista"
@@ -38,7 +43,7 @@ function Home() {
     {
       title: "Remeni",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, architecto.",
-      img,
+      img: remen,
       isAccentuated: true,
       to: "/remeni",
       text: "Pogledajte sve remene"
@@ -48,37 +53,37 @@ function Home() {
   const [other, setOther] = useState([
     {
       title: "Lezajevi",
-      img,
+      img: lezaj,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/lezajevi"
     },
     {
       title: "Hilzne",
-      img,
+      img: hilzna,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/hilzne"
     },
     {
       title: "Kucista",
-      img,
+      img: kuciste,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/kucista"
     },
     {
       title: "Kucista",
-      img,
+      img: kuciste,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/kucista"
     },
     {
       title: "Remeni",
-      img,
+      img: remen2,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/remeni"
     },
     {
       title: "Klinasti remeni",
-      img,
+      img: remen,
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
       to: "/klinasti-remeni"
     }

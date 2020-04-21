@@ -40,6 +40,9 @@
 input[type="number"].dimension-search-input {
   width: 78% !important;
   appearance: none;
+  @include tablet {
+    width: 90% !important;
+  }
 }
 
 input[type="number"].dimension-remove-arrows {

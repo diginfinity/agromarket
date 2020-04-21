@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import FullSearchItem from '../layout/pagepart/FullSearchItem';
 import TitleCard from '../layout/cards/TitleCard';
-import svg from '../../assets/wurth.svg';
+import svg from '../../assets/logos/wurth.svg';
 import TextCard from '../layout/cards/TextCard';
 import MainCard from '../layout/cards/MainCard';
 import img from '../../assets/lezaj.svg';

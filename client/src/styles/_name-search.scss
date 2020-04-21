@@ -47,6 +47,9 @@
   width: 90%;
   height: 30px !important;
   margin: auto;
+  @include tablet {
+    width: 95%;
+  }
 }
 
 .name-search-custom-padding {

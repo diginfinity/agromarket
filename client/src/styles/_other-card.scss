@@ -6,6 +6,10 @@
   margin: 1rem;
   max-width: 30%;
   border-bottom: 2px solid $primary;
+  @include portraittablet {
+    max-width: 45%;
+  }
+
   @include phone {
     border-bottom: none;
     max-width: 100%;
@@ -15,6 +19,10 @@
 
 .other-card-img-content-bundle {
   display: flex;
+  @include tablet {
+    margin-bottom: 1rem;
+  }
+
   @include phone {
     justify-content: space-between;
   }
@@ -22,6 +30,18 @@
 
 .other-card-image {
   margin-right: 1rem;
+
+  @include tablet {
+    display: block;
+  }
+
+  img {
+    @include portraittablet {
+      max-height: 92px;
+      max-width: 84px;
+    }
+  }
+
   @include phone {
     height: 53px;
     width: 48px;

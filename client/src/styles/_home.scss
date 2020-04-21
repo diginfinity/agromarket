@@ -12,6 +12,12 @@
   flex-flow: wrap;
 }
 
+.home-flex-other-items {
+  @include portraittablet {
+    justify-content: space-around;
+  }
+}
+
 .home-flex-represent-items {
   @include phone {
     flex-flow: row nowrap;

@@ -1,5 +1,8 @@
 .logo-strip-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  display: block;
+  height: 100px;
+  overflow: hidden;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-wrap: nowrap;
 }

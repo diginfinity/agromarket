@@ -2,7 +2,7 @@ import React from 'react';
 
 function LogoCard({ title, logo }) {
   return (
-    <div>
+    <div className="logo-card-container">
       <img src={logo} alt={title} title={title} />
     </div>
   );
