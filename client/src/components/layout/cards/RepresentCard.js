@@ -7,18 +7,18 @@ function RepresentCard({ name, img }) {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1225 });
 
   return isDesktopOrLaptop ? (
-    <div className="represent-card-container uk-margin-small">
+    <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
       {img && <img src={img} uk-img />}
       <p className="uk-panel">{name}</p>
     </div>
   ) : isTablet ? (
-    <div className="represent-card-container uk-margin-small">
+    <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
       {img && <img src={img} uk-img />}
       <p className="uk-panel">{name}</p>
     </div>
   ) : isMobile ? (
     <li style={{display: 'flex', justifyContent: "center"}}>
-      <div className="represent-card-container uk-margin-small">
+      <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
         {img && <img src={img} uk-img />}
         <p className="uk-panel">{name}</p>
       </div>

@@ -15,7 +15,7 @@ function Footer() {
         <div className="uk-margin-small-top footer-divider"></div>
       </div>
       <div className="uk-container uk-margin-large-top">
-        <div className="footer-flex-container">
+        <div className="uk-flex uk-flex-between footer-flex-container">
           <div className="footer-address-mail">
             <div className="footer-address">
               <p className="text-primary">
@@ -35,12 +35,12 @@ function Footer() {
               <i className="fas fa-phone"></i>&nbsp;&nbsp;Telefon
             </p>
             <p className="white">
-              <span className="footer-phone-number-item">021/823-424</span><br/>
-              <span className="footer-phone-number-item">021/823-425</span><br/>
-              <span className="footer-phone-number-item">021/822-459</span>
+              <span className="uk-display-inline-block footer-phone-number-item">021/823-424</span><br/>
+              <span className="uk-display-inline-block footer-phone-number-item">021/823-425</span><br/>
+              <span className="uk-display-inline-block footer-phone-number-item">021/822-459</span>
             </p>
           </div>
-          <div className="footer-work-time">
+          <div>
             <p className="text-primary">
               <i className="fas fa-clock"></i>&nbsp;&nbsp;Radno vreme
             </p>
@@ -60,7 +60,7 @@ function Footer() {
         <div className="uk-margin-small-top footer-divider"></div>
       </div>
       <div className="uk-container uk-margin-large-top">
-        <div className="footer-flex-container">
+        <div className="uk-flex uk-flex-between footer-flex-container">
           <div className="footer-address-mail">
             <div className="footer-address">
               <p className="text-primary">
@@ -80,9 +80,9 @@ function Footer() {
                   <i className="fas fa-phone"></i>&nbsp;&nbsp;Telefon
                   </p>
                   <p className="white">
-                    <span className="footer-phone-number-item">021/823-424</span><br/>
-                    <span className="footer-phone-number-item">021/823-425</span><br/>
-                    <span className="footer-phone-number-item">021/822-459</span>
+                    <span className="uk-display-inline-block footer-phone-number-item">021/823-424</span><br/>
+                    <span className="uk-display-inline-block footer-phone-number-item">021/823-425</span><br/>
+                    <span className="uk-display-inline-block footer-phone-number-item">021/822-459</span>
                   </p>
                 </div>
                 <div className="footer-map">
@@ -94,9 +94,8 @@ function Footer() {
                 </div>
                 </div>
                 <small>&#169; Copyright Agromarket 021, 2018. All Rights Reserved.</small>
-              </div>
-            </footer>
-
+          </div>
+    </footer>
   ) : isMobile ? (
     <footer className="footer-container">
       <div className="uk-container">
@@ -104,7 +103,7 @@ function Footer() {
         <div className="uk-margin-small-top footer-divider"></div>
       </div>
       <div className="uk-container uk-margin-large-top">
-        <div className="footer-flex-container">
+        <div className="uk-flex uk-flex-between footer-flex-container">
           <div className="footer-address-mail">
             <div className="footer-address">
               <p className="text-primary">
@@ -124,18 +123,18 @@ function Footer() {
               <i className="fas fa-phone"></i>&nbsp;&nbsp;Telefon
             </p>
             <p className="white">
-              <span className="footer-phone-number-item">021/823-424</span><br/>
-              <span className="footer-phone-number-item">021/823-425</span><br/>
-              <span className="footer-phone-number-item">021/822-459</span>
+              <span className="uk-display-inline-block footer-phone-number-item">021/823-424</span><br/>
+              <span className="uk-display-inline-block footer-phone-number-item">021/823-425</span><br/>
+              <span className="uk-display-inline-block footer-phone-number-item">021/822-459</span>
             </p>
           </div>
-          <div className="footer-work-time">
+          <div>
             <p className="text-primary">
               <i className="fas fa-clock"></i>&nbsp;&nbsp;Radno vreme
             </p>
             <p className="white">Pon-Pet: 9:00 - 17:00</p>
           </div>
-          <div className="footer-map">
+          <div className="uk-flex uk-flex-center uk-flex-middle footer-map">
             <img src={map} alt="Map" />
           </div>
         </div>

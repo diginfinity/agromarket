@@ -50,8 +50,8 @@ function About() {
         <div className="uk-margin-top">
           <TitleCard title="O nama" />
         </div>
-        <div className="uk-margin-large-top about-main">
-          <div className="about-text">
+        <div className="uk-margin-large-top uk-flex">
+          <div className="uk-width-3-4">
             <p>
               Agromarket je osnovan 1993. godine kao kompanija za trgovinu rezervnih delova, a od 1997. godine smo jedan od najvećih ovlašćenih uvoznika i distributera FAG i INA ležajeva za tržište Srbije.
             </p>
@@ -59,17 +59,17 @@ function About() {
               Osnovna svrha našeg poslovanja jeste podrška velikom broju vodećih kompanija u Srbiji kao dobavljač za potrebe industrije, poljoprivrede, auto i kamionskog programa. Prepoznati smo po kvalitetu usluge ali i po svetski poznatim brendovima koje zastupamo i čiji smo ovlašćeni distributeri:
             </p>
           </div>
-          <div className="about-logos">
-            <div className="about-logo-row-1">
+          <div className="uk-flex uk-flex-column uk-flex-wrap uk-flex-between">
+            <div className="uk-width-1-1 uk-flex uk-flex-center padding-tiny">
               <img src={svg} alt="Logo" />
             </div>
             <div className="about-logo-row-2">
-              <img src={svg} alt="Logo" />
-              <img src={svg} alt="Logo" />
+              <img src={svg} alt="Logo" className="uk-display-inline-block padding-tiny" />
+              <img src={svg} alt="Logo" className="uk-display-inline-block padding-tiny" />
             </div>
           </div>
         </div>
-        <div className="about-text-cards">
+        <div className="uk-flex about-text-cards">
           <TextCard
             title="Nasa misija"
             text="Superiornim kvalitetom brendova koje zastupamo, odgovornim poslovanjem, znanjem i pouzdanošću, činimo vaš najznačajniji oslonac"
@@ -82,7 +82,7 @@ function About() {
         <div className="uk-margin-large-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
-        <div className="uk-margin-top uk-margin-bottom about-flex-main-items">
+        <div className="uk-margin-top uk-margin-bottom uk-flex uk-flex-wrap">
           {mainItems.map(item => (
             <MainCard
               key={item.title}

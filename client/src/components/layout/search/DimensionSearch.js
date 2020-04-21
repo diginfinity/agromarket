@@ -25,8 +25,8 @@ function DimensionSearch({ bodyWidth }) {
             Pretrazite po dimenzijama:
           </p>
           {showSearchPhones && (
-            <div className="dimension-form-group-holder uk-margin-top">
-              <div className="form-group">
+            <div className="uk-flex uk-flex-wrap uk-margin-top">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="diameterIn">Unutrasnji precnik:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -37,7 +37,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="diameterOut">Spoljasnji precnik:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -48,7 +48,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="width">Sirina:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -59,7 +59,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block uk-flex-column form-group">
                 <label htmlFor="accuracy">Preciznost:</label>
                 <div className="dimension-form-boundary">
                   <div className="dimension-border">
@@ -93,8 +93,8 @@ function DimensionSearch({ bodyWidth }) {
             Pretrazite po dimenzijama:
           </p>
           {showSearchPhones && (
-            <div className="dimension-form-group-holder uk-margin-top">
-              <div className="form-group">
+            <div className="uk-flex uk-flex-wrap uk-margin-top">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="diameterIn">Unutrasnji precnik:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -105,7 +105,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="diameterOut">Spoljasnji precnik:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -116,7 +116,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="width">Sirina:</label>
                 <div className="dimension-form-boundary dimension-border">
                   <input
@@ -127,7 +127,7 @@ function DimensionSearch({ bodyWidth }) {
                   /><span className="dimension-mm">mm</span>
                 </div>
               </div>
-              <div className="form-group">
+              <div className="uk-display-inline-block form-group">
                 <label htmlFor="accuracy">Preciznost:</label>
                 <div className="dimension-form-boundary">
                   <div className="dimension-border">
@@ -157,8 +157,8 @@ function DimensionSearch({ bodyWidth }) {
           <p className="dimension-custom-margin-bottom text-primary upper smaller">
             Pretrazite po dimenzijama:
           </p>
-          <div className="dimension-form-group-holder">
-            <div className="form-group">
+          <div className="uk-flex uk-flex-wrap">
+            <div className="uk-display-inline-block form-group">
               <label htmlFor="diameterIn">Unutrasnji precnik:</label>
               <div className="dimension-form-boundary dimension-border">
                 <input
@@ -169,7 +169,7 @@ function DimensionSearch({ bodyWidth }) {
                 /><span className="dimension-mm">mm</span>
               </div>
             </div>
-            <div className="form-group">
+            <div className="uk-display-inline-block form-group">
               <label htmlFor="diameterOut">Spoljasnji precnik:</label>
               <div className="dimension-form-boundary dimension-border">
                 <input
@@ -180,7 +180,7 @@ function DimensionSearch({ bodyWidth }) {
                 /><span className="dimension-mm">mm</span>
               </div>
             </div>
-            <div className="form-group">
+            <div className="uk-display-inline-block form-group">
               <label htmlFor="width">Sirina:</label>
               <div className="dimension-form-boundary dimension-border">
                 <input
@@ -191,7 +191,7 @@ function DimensionSearch({ bodyWidth }) {
                 /><span className="dimension-mm">mm</span>
               </div>
             </div>
-            <div className="form-group">
+            <div className="uk-display-inline-block form-group">
               <label htmlFor="accuracy">Preciznost:</label>
               <div className="dimension-form-boundary">
                 <div className="dimension-border">

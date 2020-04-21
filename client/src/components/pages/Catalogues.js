@@ -36,7 +36,7 @@ function Catalogues() {
         <div className="uk-margin-large-top">
           <TitleCard title="Katalozi" />
         </div>
-        <div className="uk-margin-top catalogues-flex-items">
+        <div className="uk-margin-top uk-flex uk-flex-wrap">
           {catalogues.map(cat => (
             <CatalogueCard
               key={cat.name}

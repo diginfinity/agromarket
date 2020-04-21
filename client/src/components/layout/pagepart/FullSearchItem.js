@@ -5,7 +5,7 @@ import FilterSearch from '../search/FilterSearch';
 
 function FullSearchItem({ nameSearchRef, filterSearchRef, dimensionSearchRef }) {
   return (
-    <div className="full-search-item-flex-search">
+    <div className="uk-flex uk-flex-between full-search-item-flex-search">
       <NameSearch nameSearchRef={nameSearchRef} />
       <DimensionSearch dimensionSearchRef={dimensionSearchRef} />
       <FilterSearch filterSearchRef={filterSearchRef} />

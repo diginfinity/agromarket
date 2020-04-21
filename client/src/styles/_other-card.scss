@@ -2,7 +2,6 @@
 @import "mixins";
 
 .other-card-container {
-  display: block;
   margin: 1rem;
   max-width: 30%;
   border-bottom: 2px solid $primary;
@@ -18,7 +17,6 @@
 }
 
 .other-card-img-content-bundle {
-  display: flex;
   @include tablet {
     margin-bottom: 1rem;
   }

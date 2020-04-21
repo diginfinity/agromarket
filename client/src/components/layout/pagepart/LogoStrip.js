@@ -52,7 +52,7 @@ function LogoStrip() {
   ])
 
   return (
-    <div className="logo-strip-container">
+    <div className="uk-display-block logo-strip-container">
       {
         logos.map(item => (
           <LogoCard

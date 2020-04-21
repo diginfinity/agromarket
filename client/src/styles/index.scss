@@ -16,11 +16,7 @@
 @import "about";
 @import "text-card";
 @import "logo-strip";
-@import "assortment";
 @import "table-card";
-@import "product";
-@import "catalogues";
-@import "catalogue-card";
 @import "contact";
 @import "contact-card";
 @import "contact-form";
@@ -97,4 +93,8 @@ html {
 
 .rel {
   position: relative;
+}
+
+.padding-tiny {
+  padding: 5px;
 }

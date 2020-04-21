@@ -8,8 +8,6 @@
 }
 
 .footer-flex-container {
-  display: flex;
-  justify-content: space-between;
   @include footerphone {
     display: block;
   }
@@ -22,7 +20,6 @@
 }
 
 .footer-phone-number-item {
-  display: inline-block;
   margin: 5px 0;
 }
 
@@ -33,9 +30,6 @@
 .footer-map {
   width: 376px;
   height: 330px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   user-select: none;
   @include tablet {
     display: block;

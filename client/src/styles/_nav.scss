@@ -5,16 +5,6 @@
   min-height: 50px ;
 }
 
-.nav-tablet-flex {
-  display: flex;
-  flex-flow: column;
-}
-
-.nav-upper-tablet {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav-smaller-close {
   position: absolute;
   top: 5px;
@@ -24,7 +14,6 @@
 
 .nav-smaller-devices {
   margin: 0 1rem 0 0.5rem;
-  justify-content: space-between;
 }
 
 .nav-custom-hamburger {

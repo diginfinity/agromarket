@@ -217,9 +217,9 @@ function Nav(props) {
 
       {isTablet && (
         <Fragment>
-          <nav className="uk-navbar nav-tablet-flex" style={{ flexFlow: !props.additional && 'row'}}>
+          <nav className="uk-navbar uk-flex uk-flex-column" style={{ flexFlow: !props.additional && 'row'}}>
             {props.additional ? (
-              <div className="nav-upper-tablet">
+              <div className="uk-flex uk-flex-between">
                 <div className="uk-logo nav-custom-logo" style={{ marginLeft: !props.additional && 0 }}>
                   <img src={logo} alt="Agromarket logo"/>
                 </div>
@@ -323,7 +323,7 @@ function Nav(props) {
 
       {isMobile && (
         <Fragment>
-          <nav className="uk-navbar nav-smaller-devices">
+          <nav className="uk-navbar uk-flex-between nav-smaller-devices">
             <div className="uk-logo nav-custom-logo" style={{ marginLeft: props.additional ? "160px" : 0 }}>
               <img src={logo} alt="Agromarket logo"/>
             </div>

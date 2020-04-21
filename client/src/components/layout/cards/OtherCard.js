@@ -8,8 +8,8 @@ function OtherCard({ title, img, desc, to }) {
   const isMobile = useMediaQuery({ maxWidth: 649 });
 
   return isDesktopOrLaptop ? (
-    <div className="other-card-container">
-      <div className="other-card-img-content-bundle">
+    <div className="uk-display-block other-card-container">
+      <div className="uk-flex other-card-img-content-bundle">
         {img && (
           <div className="other-card-image">
             <img src={img} />
@@ -25,8 +25,8 @@ function OtherCard({ title, img, desc, to }) {
         </div>
     </div>
   ) : isTablet ? (
-    <div className="other-card-container">
-      <div className="other-card-img-content-bundle">
+    <div className="uk-display-block other-card-container">
+      <div className="uk-flex other-card-img-content-bundle">
         {img && (
           <div className="other-card-image">
             <img src={img} />
@@ -42,8 +42,8 @@ function OtherCard({ title, img, desc, to }) {
       </div>
     </div>
   ) : isMobile ? (
-    <div className="other-card-container">
-      <div className="other-card-img-content-bundle">
+    <div className="uk-display-block other-card-container">
+      <div className="uk-flex other-card-img-content-bundle">
         {img && (
           <div className="other-card-image">
             <img src={img} />

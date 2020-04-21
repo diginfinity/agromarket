@@ -93,7 +93,7 @@ function Product(props) {
               <td className="card-item-padding">Dimenzije:</td>
             </tr>
           </thead>
-          <tbody className="product-flex-items">
+          <tbody>
             {
               items.map(item => (
                 <TableCard
@@ -113,7 +113,7 @@ function Product(props) {
         <div className="uk-margin-large-top">
           <TitleCard title="Zastupamo" />
         </div>
-        <div className="uk-margin-large-top product-flex-represent-items">
+        <div className="uk-margin-large-top uk-flex uk-flex-wrap">
           {represent.map(item => (
             <RepresentCard
               key={item.name}

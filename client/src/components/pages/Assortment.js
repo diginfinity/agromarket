@@ -120,7 +120,7 @@ function Assortment() {
         <div className="uk-margin-top">
           <TitleCard title="Asortiman" />
         </div>
-        <div className="uk-margin-large-top uk-margin-large-bottom assortment-flex-items">
+        <div className="uk-margin-large-top uk-margin-large-bottom uk-flex uk-flex-wrap">
           {
             items.map(item => (
               <OtherCard
@@ -136,7 +136,7 @@ function Assortment() {
         <div className="uk-margin-large-top">
           <TitleCard title="Zastupamo" />
         </div>
-        <div className="uk-margin-top assortment-flex-represent-items">
+        <div className="uk-margin-top uk-flex uk-flex-wrap">
           {represent.map(item => (
             <RepresentCard
               key={item.name}

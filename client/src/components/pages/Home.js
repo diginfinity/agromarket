@@ -95,7 +95,7 @@ function Home() {
         <div className="uk-margin-large-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
-        <div className="uk-margin-large-top home-flex-main-items">
+        <div className="uk-margin-large-top uk-flex uk-flex-wrap">
           {mainItems.map(item => (
             <MainCard
               key={item.title}
@@ -115,7 +115,7 @@ function Home() {
         <div className="uk-margin-large-top">
           <TitleCard title="Ostalo u ponudi" />
         </div>
-        <div className="uk-margin-large-top uk-margin-large-bottom home-flex-other-items">
+        <div className="uk-margin-large-top uk-margin-large-bottom uk-flex uk-flex-wrap">
           {other.map(item => (
             <OtherCard
               key={item.title}

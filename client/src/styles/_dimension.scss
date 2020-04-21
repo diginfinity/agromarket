@@ -62,13 +62,7 @@ input[type="number"].dimension-remove-arrows {
   user-select: none;
 }
 
-.dimension-form-group-holder {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .form-group {
-  display: inline-block;
   width: 100px;
   margin: 0 8px;
 
@@ -86,10 +80,6 @@ input[type="number"].dimension-remove-arrows {
 
   @include phone {
     width: 45%;
-  }
-
-  &:nth-child(4) {
-    flex-flow: column;
   }
 }
 
@@ -145,8 +135,8 @@ input[type="number"].dimension-remove-arrows {
 }
 
 .dimension-small-text {
-    text-align: right;
-    margin-right: 4rem;
-    width: 100%;
-    font-size: 0.55rem;
+  text-align: right;
+  margin-right: 4rem;
+  width: 100%;
+  font-size: 0.55rem;
 }

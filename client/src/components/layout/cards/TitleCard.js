@@ -3,7 +3,7 @@ import React from 'react';
 function TitleCard({ title }) {
   return (
     <div className="title-card-container">
-      <h2 className="title-card-content">{title}</h2>
+      <h2 className="uk-display-inline-block title-card-content">{title}</h2>
     </div>
   );
 }

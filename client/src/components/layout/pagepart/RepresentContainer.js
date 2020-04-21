@@ -52,7 +52,7 @@ function RepresentContainer() {
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1225 });
 
   return isDesktopOrLaptop ? (
-    <div className="uk-margin-large-top home-flex-represent-items">
+    <div className="uk-margin-large-top uk-flex uk-flex-wrap">
       {represent.map(item => (
         <RepresentCard
           key={item}
@@ -62,7 +62,7 @@ function RepresentContainer() {
       ))}
     </div>
     ) : isTablet ? (
-      <div className="uk-margin-large-top home-flex-represent-items">
+      <div className="uk-margin-large-top uk-flex uk-flex-wrap">
         {represent.map(item => (
           <RepresentCard
             key={item}

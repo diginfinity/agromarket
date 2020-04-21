@@ -98,7 +98,7 @@ function Contact() {
           </p>
           <hr className="hr-black"/>
         </div>
-        <div className="contact-information">
+        <div className="uk-flex contact-information">
           <div className="uk-margin-top contact-people">
             {person.map(p => (
               <ContactCard
@@ -110,14 +110,14 @@ function Contact() {
               />
             ))}
           </div>
-          <div className="contact-form">
+          <div className="uk-flex uk-flex-row uk-flex-wrap contact-form">
             <ContactForm />
           </div>
         </div>
         <div className="uk-margin-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
-        <div className="uk-margin-top uk-margin-bottom contact-flex-main-items">
+        <div className="uk-margin-top uk-margin-bottom uk-flex uk-flex-wrap">
           {mainItems.map(item => (
             <MainCard
               key={item.title}
