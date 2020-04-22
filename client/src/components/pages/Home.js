@@ -92,7 +92,7 @@ function Home() {
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <div className="uk-margin-large-top">
+        <div className="uk-margin-top">
           <TitleCard title="Najpopularniji proizvodi" />
         </div>
         <div className="uk-margin-large-top uk-flex uk-flex-wrap">

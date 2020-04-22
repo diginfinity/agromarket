@@ -4,36 +4,40 @@ import Footer from '../layout/pagepart/Footer';
 import FullSearchItem from '../layout/pagepart/FullSearchItem';
 import LogoStrip from '../layout/pagepart/LogoStrip';
 import CatalogueCard from '../layout/cards/CatalogueCard';
-import img from '../../assets/catalogue.svg';
+import fkl from '../../assets/catalogues/fkl.svg';
+import agropoint from '../../assets/catalogues/agropoint.svg';
+import loctite from '../../assets/catalogues/loctite.svg';
+import corteco from '../../assets/catalogues/corteco.svg';
+import fag from '../../assets/catalogues/fag.svg';
 
 function Catalogues() {
   const [catalogues, setCatalogues] = useState([
     {
       name: "FAG",
-      img
+      img: fag
     },
     {
       name: "FKL Kardanska vratila",
-      img
+      img: fkl
     },
     {
       name: "Loctite",
-      img
+      img: loctite
     },
     {
       name: "FKL radkapne",
-      img
+      img: agropoint
     },
     {
       name: "Corteco",
-      img
+      img: corteco
     }
   ])
 
   return (
     <Fragment>
       <div className="uk-container uk-margin-top">
-        <div className="uk-margin-large-top">
+        <div className="uk-margin-top">
           <TitleCard title="Katalozi" />
         </div>
         <div className="uk-margin-top uk-flex uk-flex-wrap">

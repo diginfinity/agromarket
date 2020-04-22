@@ -10,6 +10,7 @@ import optibelt from '../../../assets/logos/optibelt.svg';
 import timken from '../../../assets/logos/timken.svg';
 import wd40 from '../../../assets/logos/wd40.svg';
 import wurth from '../../../assets/logos/wurth.svg';
+import cut from '../../../assets/logos/cut.svg';
 
 function LogoStrip() {
   const [logos, setLogos] = useState([
@@ -48,6 +49,14 @@ function LogoStrip() {
     {
       title: "NTN",
       logo: ntn
+    },
+    {
+      title: "FAG",
+      logo: fag
+    },
+    {
+      title: "?",
+      logo: cut
     }
   ])
 
