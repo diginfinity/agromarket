@@ -10,6 +10,7 @@ import Product from './components/pages/Product';
 import Contact from './components/pages/Contact';
 import HelpCard from './components/layout/cards/HelpCard';
 import DimensionSearch from './components/layout/search/DimensionSearch';
+import CatalogueCardSingle from './components/pages/CatalogueCardSingle';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/kontakt" component={Contact} />
           <Route exact path="/help" component={HelpCard} />
           <Route exact path="/dim" component={DimensionSearch} />
+          <Route exact path="/katalog/:name" component={CatalogueCardSingle} />
         </Fragment>
       </Switch>
     </Router>

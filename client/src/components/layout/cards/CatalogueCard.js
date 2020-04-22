@@ -28,7 +28,7 @@ function CatalogueCard({ img, name }) {
             <img src={img} alt={name} />
             <div style={hoverStyle} className="uk-flex uk-flex-middle uk-flex-column uk-flex-center">
               <h2 className="uk-text-center uk-text-bold">{name}</h2>
-              <Link to={`/catalogue/${name}`} className="uk-text-bold">Pogledajte katalog</Link>
+              <Link to={`/katalog/${name}`} className="uk-text-bold">Pogledajte katalog</Link>
               <Link className="uk-margin-top text-primary uk-text-bold">
                 Skinite katalog <i className="fas fa-cloud-download-alt" />
             </Link>
