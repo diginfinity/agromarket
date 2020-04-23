@@ -7,6 +7,8 @@ import MainCard from '../layout/cards/MainCard';
 import img from '../../assets/lezaj.svg';
 import LogoStrip from '../layout/pagepart/LogoStrip';
 import Footer from '../layout/pagepart/Footer';
+import qr from '../../assets/about-img/qr.svg';
+import certified from '../../assets/about-img/certified.svg';
 
 function About() {
   const [mainItems, setMainItems] = useState([
@@ -60,13 +62,10 @@ function About() {
             </p>
           </div>
           <div className="uk-flex uk-flex-column uk-flex-wrap uk-flex-between">
-            <div className="uk-width-1-1 uk-flex uk-flex-center padding-tiny">
-              <img src={svg} alt="Logo" />
+            <div className="uk-flex uk-flex-center uk-width-1-1">
+              <img src={certified} className="uk-width-3-4" alt="Certified" />
             </div>
-            <div className="about-logo-row-2">
-              <img src={svg} alt="Logo" className="uk-display-inline-block padding-tiny" />
-              <img src={svg} alt="Logo" className="uk-display-inline-block padding-tiny" />
-            </div>
+            <img src={qr} alt="QR Code" className="uk-display-inline-block padding-tiny" />
           </div>
         </div>
         <div className="uk-flex about-text-cards">
