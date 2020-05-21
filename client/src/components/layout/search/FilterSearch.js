@@ -26,7 +26,7 @@ function FilterSearch() {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
 
   return (
-    <div className="filter-search-custom input-colour-border filter-search-custom-padding uk-margin-left uk-text-center" id="step3">
+    <div className="filter-search-custom input-colour-border filter-search-custom-padding uk-text-center" id="step3">
       {isTabletOrMobile && (
         <Fragment>
           <p

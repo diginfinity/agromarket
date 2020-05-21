@@ -61,16 +61,18 @@ function LogoStrip() {
   ])
 
   return (
-    <div className="uk-display-block logo-strip-container">
-      {
-        logos.map(item => (
-          <LogoCard
-            title={item.title}
-            key={item.title}
-            logo={item.logo}
-          />
-        ))
-      }
+    <div uk-slider="autoplay: true; autoplay-interval: 3000" className="uk-position-relative uk-visible-toggle" tabIndex="-1">
+      <ul className="uk-slider-items uk-child-width-1-3 uk-child-width-1-6@m">
+        {
+          logos.map(item => (
+            <LogoCard
+              title={item.title}
+              key={item.title}
+              logo={item.logo}
+            />
+          ))
+        }
+      </ul>
     </div>
   );
 }

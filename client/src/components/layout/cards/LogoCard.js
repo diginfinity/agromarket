@@ -2,9 +2,11 @@ import React from 'react';
 
 function LogoCard({ title, logo }) {
   return (
-    <div className="uk-display-inline-block logo-card-container">
-      <img src={logo} alt={title} title={title} />
-    </div>
+    <li className="uk-flex uk-flex-center uk-flex-middle">
+      <div className="uk-width-1-1 uk-flex uk-flex-column uk-margin-small">
+        <img src={logo} alt={title} title={title} />
+      </div>
+    </li>
   );
 }
 

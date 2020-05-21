@@ -52,8 +52,8 @@ function About() {
         <div className="uk-margin-top">
           <TitleCard title="O nama" />
         </div>
-        <div className="uk-margin-large-top uk-flex">
-          <div className="uk-width-3-4">
+        <div className="uk-margin-large-top uk-grid">
+          <div className="uk-width-3-4@m">
             <p>
               Agromarket je osnovan 1993. godine kao kompanija za trgovinu rezervnih delova, a od 1997. godine smo jedan od najvećih ovlašćenih uvoznika i distributera FAG i INA ležajeva za tržište Srbije.
             </p>
@@ -61,14 +61,16 @@ function About() {
               Osnovna svrha našeg poslovanja jeste podrška velikom broju vodećih kompanija u Srbiji kao dobavljač za potrebe industrije, poljoprivrede, auto i kamionskog programa. Prepoznati smo po kvalitetu usluge ali i po svetski poznatim brendovima koje zastupamo i čiji smo ovlašćeni distributeri:
             </p>
           </div>
-          <div className="uk-flex uk-flex-column uk-flex-wrap uk-flex-between">
-            <div className="uk-flex uk-flex-center uk-width-1-1">
-              <img src={certified} className="uk-width-3-4" alt="Certified" />
+          <div className="uk-grid uk-flex-wrap uk-flex-between uk-flex-middle uk-width-1-4@m">
+            <div className="uk-width-1-2 uk-width-1-1@m uk-flex uk-flex-center">
+              <img src={certified} alt="Certified" />
             </div>
-            <img src={qr} alt="QR Code" className="uk-display-inline-block padding-tiny" />
+            <div className="uk-width-1-2 uk-width-1-1@m uk-flex uk-flex-center">
+              <img src={qr} alt="QR Code" />
+            </div>
           </div>
         </div>
-        <div className="uk-flex about-text-cards">
+        <div className="uk-grid uk-flex-between uk-margin-remove" uk-height-match="target: > div > .uk-card">
           <TextCard
             title="Nasa misija"
             text="Superiornim kvalitetom brendova koje zastupamo, odgovornim poslovanjem, znanjem i pouzdanošću, činimo vaš najznačajniji oslonac"

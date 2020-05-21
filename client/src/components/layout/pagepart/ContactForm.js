@@ -19,56 +19,56 @@ function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="contact-form-container">
-      <div className="contact-form-fields">
+    <form onSubmit={onSubmit} className="uk-width-1-1 uk-padding uk-padding-remove-horizontal bg-form">
+      <div className="uk-width-4-5 uk-margin-auto">
         <h3 className="white">Kontaktirajte nas putem forme:</h3>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="name" className="white">Ime i prezime: (Obavezno)</label>
           <input
             value={name}
             onChange={onChange}
             placeholder="Ukucajte Vase ime i prezime"
             type="text"
-            className="uk-input"
+            className="uk-input uk-border-rounded"
           />
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="phone" className="white">Telefon: (Obavezno)</label>
           <input
             value={phone}
             onChange={onChange}
             placeholder="Ukucajte Vas broj telefona"
             type="text"
-            className="uk-input"
+            className="uk-input uk-border-rounded"
           />
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="company" className="white">Ime firme:</label>
           <input
             value={company}
             onChange={onChange}
             placeholder="Ukucajte ime firme"
             type="text"
-            className="uk-input"
+            className="uk-input uk-border-rounded"
           />
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="email" className="white">E-mail: (Obavezno)</label>
           <input
             value={email}
             onChange={onChange}
             placeholder="Ukucajte Vas e-mail"
             type="text"
-            className="uk-input"
+            className="uk-input uk-border-rounded"
           />
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="issue" className="white">U vezi:</label>
-          <select name="issue" className="uk-select">
+          <select name="issue" className="uk-select uk-border-rounded">
             <option value="~~~~">~~~~</option>
           </select>
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <label htmlFor="message" className="white">Poruka</label>
           <textarea
             name="message"
@@ -78,7 +78,7 @@ function ContactForm() {
             className="uk-textarea contact-form-textarea"
           />
         </div>
-        <div className="contact-form-field">
+        <div className="uk-margin-top">
           <input
             type="submit"
             value="Posalji"

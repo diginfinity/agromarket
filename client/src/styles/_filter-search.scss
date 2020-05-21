@@ -2,29 +2,25 @@
 @import "mixins";
 
 .filter-search-custom {
-  width: 267px;
 
   @include landscapetablet {
-    width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
 
   @include portraittablet {
-    width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
 
   @include phone {
-    width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
 }
 
 .filter-search-custom-padding {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .filter-search-custom-margin-bottom {

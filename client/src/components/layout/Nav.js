@@ -305,7 +305,7 @@ function Nav(props) {
             </div>
           </nav>
           {props.additional && (
-            <div className="uk-container uk-margin-top">
+            <div className="uk-container uk-margin-top uk-padding-remove">
               <FullSearchItem />
               <div className="uk-text-right uk-margin-top">
                 <button
@@ -372,7 +372,7 @@ function Nav(props) {
             </div>
           </nav>
           {props.additional && (
-            <div className="uk-container uk-margin-top">
+            <div className="uk-container uk-margin-top uk-padding-remove">
               <FullSearchItem />
             </div>
           )}

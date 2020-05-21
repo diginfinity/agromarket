@@ -8,19 +8,23 @@ function RepresentCard({ name, img }) {
 
   return isDesktopOrLaptop ? (
     <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
-      {img && <img src={img} uk-img />}
-      <p className="uk-panel">{name}</p>
+      <div className="uk-flex uk-flex-center">
+        {img && <img src={img} uk-img />}
+      </div>
+      <p className="uk-panel uk-margin-auto-top">{name}</p>
     </div>
   ) : isTablet ? (
     <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
-      {img && <img src={img} uk-img />}
-      <p className="uk-panel">{name}</p>
+      <div className="uk-flex uk-flex-center">
+        {img && <img src={img} uk-img />}
+      </div>
+      <p className="uk-panel uk-margin-auto-top">{name}</p>
     </div>
   ) : isMobile ? (
-    <li style={{display: 'flex', justifyContent: "center"}}>
+    <li className="uk-flex uk-flex-center uk-flex-middle">
       <div className="uk-width-1-4 uk-flex uk-flex-column represent-card-container uk-margin-small">
         {img && <img src={img} uk-img />}
-        <p className="uk-panel">{name}</p>
+        <p className="uk-panel uk-margin-auto-top uk-text-small">{name}</p>
       </div>
     </li>
   ) : null;

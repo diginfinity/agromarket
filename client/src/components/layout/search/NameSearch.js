@@ -9,7 +9,7 @@ function NameSearch() {
   const [showSearchPhones, setShowSearchPhones] = useState(false)
 
   return (
-    <div className="name-search-custom input-colour-border name-search-custom-padding uk-margin-left" id="step1">
+    <div className="name-search-custom input-colour-border name-search-custom-padding" id="step1">
       {isTabletOrMobile && (
         <Fragment>
           <p

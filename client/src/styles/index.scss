@@ -1,28 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
 @import "scroller";
-@import "main";
 @import "nav";
 @import "variables";
 @import "name-search";
 @import "dimension";
-@import "home";
+@import "helpers";
 @import "filter-search";
-@import "title-card";
 @import "main-card";
-@import "represent-card";
 @import "other-card";
-@import "footer";
-@import "full-search-item";
-@import "about";
-@import "text-card";
-@import "logo-strip";
 @import "table-card";
-@import "contact";
-@import "contact-card";
-@import "contact-form";
 @import "help-card";
-@import "represent-container";
-@import "logo-card";
 
 html {
   font-family: "Inter", sans-serif;
@@ -31,6 +18,10 @@ html {
 
 .text-primary {
   color: $primary;
+}
+
+.text-white {
+  color: $white;
 }
 
 .smaller {
@@ -57,6 +48,10 @@ html {
   background-color: $primary;
 }
 
+.bg-form {
+  background-color: $form-bg;
+}
+
 .border-primary {
   border: $primary;
 }
@@ -73,6 +68,17 @@ html {
   &-bot {
     margin-bottom: 1rem;
   }
+}
+.represent-arrow {
+  height: 100px !important;
+  width: 100px !important;
+  color: brown !important;
+}
+
+.input-colour-border {
+  background-color: $card-bg;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .hr-black {
@@ -93,8 +99,4 @@ html {
 
 .rel {
   position: relative;
-}
-
-.padding-tiny {
-  padding: 5px;
 }

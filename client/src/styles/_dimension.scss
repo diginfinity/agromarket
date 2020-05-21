@@ -2,22 +2,17 @@
 @import "mixins";
 
 .dimension-custom {
-  max-width: 560px;
-
   @include landscapetablet {
-    max-width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
 
   @include portraittablet {
-    max-width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
 
   @include phone {
-    max-width: 85%;
     border-bottom: 3px solid rgba(0, 0, 0, 0.06);
     border-top: 3px solid rgba(0, 0, 0, 0.06);
   }
@@ -79,7 +74,7 @@ input[type="number"].dimension-remove-arrows {
   }
 
   @include phone {
-    width: 45%;
+    width: 80%;
   }
 }
 
@@ -90,7 +85,7 @@ input[type="number"].dimension-remove-arrows {
 }
 
 .dimension-custom-padding {
-  padding: 1rem 1rem 1.5rem 1rem;
+  padding: 1rem 2rem;
 }
 
 .dimension-custom-margin-bottom {

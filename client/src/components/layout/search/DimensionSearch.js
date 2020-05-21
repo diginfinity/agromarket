@@ -15,7 +15,7 @@ function DimensionSearch({ bodyWidth }) {
   const search = () => console.log("Searching");
 
   return (
-    <div className="dimension-custom input-colour-border dimension-custom-padding uk-margin-left" id="step2">
+    <div className="dimension-custom input-colour-border dimension-custom-padding" id="step2">
       {isMobile && (
         <Fragment>
           <p
